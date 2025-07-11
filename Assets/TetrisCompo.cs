@@ -16,6 +16,9 @@ public class TetrisCompo : MonoBehaviour
     private GameObject[] planetPrefabs;
 
     [SerializeField]
+    private GameObject[] walletPrefabs;
+
+    [SerializeField]
     private Transform[] spawnPoints;
 
     private List<PlanetTetrisBlock> fieldTetris=new();

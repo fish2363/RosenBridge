@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using TMPro;
 
 public class BlackHole : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class BlackHole : MonoBehaviour
     [SerializeField]
     private Rigidbody2D _rigid;
     [field: SerializeField] public float MoveSpeed { get; set; }
+
+    [SerializeField]
+    private TextMeshProUGUI levelText;
+    
 
     [Header("레벨 별 설정값")]
     public Level[] levelSetting;
@@ -36,6 +41,7 @@ public class BlackHole : MonoBehaviour
 
     public void SetPlayerSetting(float speed,float size)
     {
+        levelText.text = $"<b>{Level}</b>";
         MoveSpeed = speed;
         transform.localScale = new Vector3(size,size, transform.localScale.z);
         currentCamera.fieldOfView = levelSetting[Level - 1].cameraSize;
