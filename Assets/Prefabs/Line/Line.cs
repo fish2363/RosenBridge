@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,11 +9,14 @@ public class Line : MonoBehaviour
 
     private float detectTimer = 0f;
     private const float requiredDuration = 3f;
+    private const float requiredCoverageRatio = 0.8f; // â–¶ 80% ê¸°ì¤€
 
     private List<PlanetTetrisBlock> currentDetectedBlocks = new();
     private List<PlanetTetrisBlock> blinkingBlocks = new();
 
     private TetrisCompo tetrisCompo;
+
+    private float currentCoverage = 0f; // ðŸ‘‰ ê¸°ì¦ˆëª¨ìš© í•„ë“œ ì¶”ê°€
 
     private void Start()
     {
@@ -21,7 +24,7 @@ public class Line : MonoBehaviour
         myCollider = GetComponent<Collider2D>();
         if (myCollider == null)
         {
-            Debug.LogError("Collider2D°¡ ¾ø½À´Ï´Ù!");
+            Debug.LogError("Collider2Dê°€ ì—†ìŠµë‹ˆë‹¤!");
             enabled = false;
             return;
         }
@@ -31,11 +34,11 @@ public class Line : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Bounds bounds = myCollider.bounds;
-        Collider2D[] hits = Physics2D.OverlapBoxAll(bounds.center, bounds.size, 0f);
+        Bounds lineBounds = myCollider.bounds;
+        Collider2D[] hits = Physics2D.OverlapBoxAll(lineBounds.center, lineBounds.size, 0f);
 
         currentDetectedBlocks.Clear();
-        int count = 0;
+        float totalWidthCovered = 0f;
 
         foreach (var hit in hits)
         {
@@ -48,17 +51,23 @@ public class Line : MonoBehaviour
                 if (block != null)
                 {
                     currentDetectedBlocks.Add(block);
-                    count++;
+
+                    Bounds blockBounds = hit.bounds;
+                    float overlapMinX = Mathf.Max(lineBounds.min.x, blockBounds.min.x);
+                    float overlapMaxX = Mathf.Min(lineBounds.max.x, blockBounds.max.x);
+                    float overlapWidth = Mathf.Max(0f, overlapMaxX - overlapMinX);
+
+                    totalWidthCovered += overlapWidth;
                 }
             }
         }
 
-        // 3°³ ÀÌ»ó °¨ÁöµÈ »óÅÂ À¯Áö Áß
-        if (count >= 10)
+        currentCoverage = totalWidthCovered / lineBounds.size.x;
+
+        if (currentCoverage >= requiredCoverageRatio)
         {
             detectTimer += Time.fixedDeltaTime;
 
-            // ±ôºýÀÓ ½ÃÀÛ (1¹ø¸¸)
             foreach (var block in currentDetectedBlocks)
             {
                 if (!blinkingBlocks.Contains(block))
@@ -68,7 +77,6 @@ public class Line : MonoBehaviour
                 }
             }
 
-            // 3ÃÊ ÀÌ»ó °¨Áö À¯ÁöµÆÀ» ¶§ ÆÄ±« ÁØºñ
             if (detectTimer >= requiredDuration)
             {
                 foreach (PlanetTetrisBlock block in currentDetectedBlocks)
@@ -79,13 +87,11 @@ public class Line : MonoBehaviour
 
                 blinkingBlocks.Clear();
                 detectTimer = 0f;
-
                 StartCoroutine(DestroyRoutine());
             }
         }
         else
         {
-            // °¨Áö ÇØÁ¦ ½Ã ÃÊ±âÈ­
             detectTimer = 0f;
             foreach (var block in blinkingBlocks)
             {
@@ -100,7 +106,6 @@ public class Line : MonoBehaviour
         tetrisCompo.DestroyTetris();
         yield return new WaitForSeconds(0.7f);
 
-        // µÚ¿¡¼­ºÎÅÍ ¿ª¼øÀ¸·Î Á¦°Å
         for (int i = currentDetectedBlocks.Count - 1; i >= 0; i--)
         {
             var block = currentDetectedBlocks[i];
@@ -117,7 +122,7 @@ public class Line : MonoBehaviour
         var col = GetComponent<Collider2D>();
         if (col != null)
         {
-            Gizmos.color = Color.red;
+            Gizmos.color = currentCoverage >= requiredCoverageRatio ? Color.green : Color.red;
             Gizmos.DrawWireCube(col.bounds.center, col.bounds.size);
         }
     }

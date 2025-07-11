@@ -37,9 +37,6 @@ public class TetrisCompo : MonoBehaviour
         }
     }
 
-    
-
-    
 
     public void SpawnTetris(PlanetType type)
     {
@@ -75,6 +72,7 @@ public class TetrisCompo : MonoBehaviour
             fieldTetris[0].transform.Rotate(0,0,RotateSpeed*Time.fixedDeltaTime);
         }
 
+        fieldTetris[0].RbCompo.gravityScale = moveDir.y < 0f ? 1f : 0.1f;
 
         if (fieldTetris[0].isPlace) RemoveTetris();
         else
