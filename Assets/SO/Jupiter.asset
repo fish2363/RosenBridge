@@ -15,6 +15,6 @@ MonoBehaviour:
   planetType: 4
   planet: {fileID: 2360218162666443021, guid: 7e9fbf68a1cbdd64490136db39fca472, type: 3}
   sizes:
+  - 1
+  - 2
   - 3
-  - 5
-  - 10

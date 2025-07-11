@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56f3b8ee9eaf9cd4c9993524a0c0c40b, type: 3}
   m_Name: Star1
   m_EditorClassIdentifier: 
+  planetType: 0
   planet: {fileID: 4734704447177704265, guid: 07f26b532a9c6b444b97ced09e97aeb3, type: 3}
   sizes:
-  - 3
+  - 1
