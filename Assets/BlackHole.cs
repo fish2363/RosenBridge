@@ -16,8 +16,13 @@ public class BlackHole : MonoBehaviour
 
     public int Level { get; set; } = 1;
 
+    [Header("현재 지름")]
+    public float diameter;
+    CircleCollider2D col;
+
     private void Start()
     {
+        col = GetComponent<CircleCollider2D>();
         SetPlayerSetting(levelSetting[0].levelSpeed,levelSetting[0].levelSize);
     }
 
@@ -34,6 +39,11 @@ public class BlackHole : MonoBehaviour
         MoveSpeed = speed;
         transform.localScale = new Vector3(size,size, transform.localScale.z);
         currentCamera.fieldOfView = levelSetting[Level - 1].cameraSize;
+        float radius = col.radius;
+        float scale = transform.lossyScale.x; // Circle이면 x와 y가 같다고 가정
+        diameter = radius * 2f * scale;
+
+        Debug.Log($"내 지름은 {diameter:F2}");
     }
 
     private void FixedUpdate()

@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 3357020299549730085}
   - component: {fileID: 7851464492322937207}
   - component: {fileID: -7313601149167271692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Planet-Neptun
-  m_TagString: Untagged
+  m_TagString: Tetris
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,8 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c94768d5c2de77d40a27413243391442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <InputReader>k__BackingField: {fileID: 11400000, guid: f6f81044fc533c34fbad0e329da0fa30, type: 2}
-  <MoveSpeed>k__BackingField: 5
+  isPlace: 0
 --- !u!60 &7851464492322937207
 PolygonCollider2D:
   m_ObjectHideFlags: 0

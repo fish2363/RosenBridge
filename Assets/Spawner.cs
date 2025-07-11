@@ -51,6 +51,7 @@ public class Spawner : MonoBehaviour
             Percent currentPercent = GetPercentForLevel(player.Level);
 
             int randPercent = UnityEngine.Random.Range(0, 100);
+            int randPlanet = UnityEngine.Random.Range(0, EatSOList.eatSOs.Count);
 
             // 누적 확률로 행성 등급 결정
             int level = 0;
@@ -68,7 +69,7 @@ public class Spawner : MonoBehaviour
             }
 
             // 해당 등급에 맞는 SO 선택
-            spawnSO = EatSOList.eatSOs[level];
+            spawnSO = EatSOList.eatSOs[randPlanet];
 
             // 생성 및 설정
             GameObject instance = Instantiate(spawnSO.planet, spawnPos, Quaternion.identity);

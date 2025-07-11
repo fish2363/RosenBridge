@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e6c4b2eb8e131df48b4add1b4b5efeb8
+guid: d2c0bf37f63286b47872a0339526b42f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6340560482361656696
-    second: neptun_0
+      213: 4104854341036996382
+    second: UI_check_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: neptun_0
+      name: UI_check_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 90
-        width: 302
-        height: 202
+        x: 0
+        y: 0
+        width: 106
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 88a34f3c5ddc108a0800000000000000
-      internalID: -6340560482361656696
+      spriteID: e17fa34564f57f830800000000000000
+      internalID: 4104854341036996382
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      neptun_0: -6340560482361656696
+      UI_check_0: 4104854341036996382
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

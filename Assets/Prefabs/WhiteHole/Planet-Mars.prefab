@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 8034711214111641784}
   - component: {fileID: 5995887652769112696}
   - component: {fileID: 8104024729695922873}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Planet-Mars
-  m_TagString: Untagged
+  m_TagString: Tetris
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,8 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c94768d5c2de77d40a27413243391442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <InputReader>k__BackingField: {fileID: 11400000, guid: f6f81044fc533c34fbad0e329da0fa30, type: 2}
-  <MoveSpeed>k__BackingField: 5
+  isPlace: 0
 --- !u!60 &5995887652769112696
 PolygonCollider2D:
   m_ObjectHideFlags: 0

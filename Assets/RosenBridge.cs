@@ -24,6 +24,11 @@ public class RosenBridge : MonoBehaviour
     [SerializeField]
     private Sprite[] planetSprites;
 
+    [Header("애니메이션")]
+    public Ease inAnimation;
+    public Ease outAnimation;
+    public Ease moveAnimation;
+
     private void Awake()
     {
         Instance = this;
@@ -46,12 +51,12 @@ public class RosenBridge : MonoBehaviour
         tf.localScale = Vector3.zero; // 시작 크기 = 0
 
         // 커지며 등장
-        tf.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack); // 0.5초 동안 천천히 커짐
+        tf.DOScale(Vector3.one, 0.5f).SetEase(inAnimation); // 0.5초 동안 천천히 커짐
 
         // 이동 + 도착 후 작아지며 제거
-        tf.DOMove(right.position, moveDuration).SetEase(Ease.InOutSine).OnComplete(() =>
+        tf.DOMove(right.position, moveDuration).SetEase(moveAnimation).OnComplete(() =>
         {
-            tf.DOScale(Vector3.zero, 0.5f).SetEase(Ease.InBack).OnComplete(() =>
+            tf.DOScale(Vector3.zero, 0.5f).SetEase(outAnimation).OnComplete(() =>
             {
                 _tetrisCompo.SpawnTetris(planet);
                 Destroy(p);

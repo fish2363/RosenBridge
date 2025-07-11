@@ -14,7 +14,9 @@ public class Planet : MonoBehaviour
     [Header("블랙홀 설정")]
     public Transform blackholeCenter;     // 중심점 (블랙홀)
     public float rotateSpeed = 180f;      // 도/초
-    public float shrinkSpeed = 0.5f;      // 축소 속도
+    public float shrinkSpeed = 0.5f;      // 축소 애니메이션 속도
+    public float magneticForceSizeSpeed = 0.1f;      //자력 축소 속도
+    public float magnetismSpeed = 0.1f;      // 자력이 끌어당기는 속도
     public float pullRate = 0.97f;        // 감기 속도 (0.95~0.99)
 
     [Header("파괴 조건")]
@@ -25,6 +27,20 @@ public class Planet : MonoBehaviour
 
     private float currentRadius;
     private float currentAngle;
+
+    [Header("현재 지름")]
+    [SerializeField]
+    private float diameter;
+
+    CircleCollider2D col;
+    bool isTry;
+    bool isAte;
+
+    void Start()
+    {
+        col = GetComponent<CircleCollider2D>();
+        blackholeCenter = FindAnyObjectByType<BlackHole>().gameObject.transform;
+    }
 
     public void StartBlackhole()
     {
@@ -40,42 +56,65 @@ public class Planet : MonoBehaviour
 
     void Update()
     {
-        if (!isAbsorbing || blackholeCenter == null) return;
+        float radius = col.radius;
+        float scale = transform.lossyScale.x; // Circle이면 x와 y가 같다고 가정
+        diameter = radius * 2f * scale;
 
-        // 1. 회전 (라디안 단위로 누적)
-        float angleDelta = rotateSpeed * Mathf.Deg2Rad * Time.deltaTime;
-        currentAngle += angleDelta;
-
-        // 2. 중심으로 감기 (점점 반지름 축소)
-        currentRadius *= Mathf.Pow(pullRate, Time.deltaTime * 60f); // 프레임 보정
-
-        // 3. 새로운 위치 계산
-        Vector3 offset = new Vector3(Mathf.Cos(currentAngle), Mathf.Sin(currentAngle), 0f) * currentRadius;
-        transform.position = blackholeCenter.position + offset;
-
-        // 4. 점점 작아지기
-        transform.localScale = Vector3.Lerp(transform.localScale, Vector3.zero, shrinkSpeed * Time.deltaTime);
-
-        // 5. 크기 기준 or 거리 기준으로 제거
-        float avgScale = (transform.localScale.x + transform.localScale.y + transform.localScale.z) / 3f;
-        if (avgScale < minScaleThreshold || currentRadius < minRadiusThreshold)
+        if(isTry)
         {
-            RosenBridge.Instance.EatPlanet(currentSO.planetType);
-            Destroy(gameObject);
+            transform.localScale = Vector3.Lerp(transform.localScale, Vector3.zero, shrinkSpeed * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, blackholeCenter.position, magnetismSpeed * Time.deltaTime);
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
+        if (isAbsorbing && blackholeCenter != null)
         {
-            if (collision.GetComponent<BlackHole>().Level >= currentLevel)
+            // 1. 회전 (라디안 단위로 누적)
+            float angleDelta = rotateSpeed * Mathf.Deg2Rad * Time.deltaTime;
+            currentAngle += angleDelta;
+
+            // 2. 중심으로 감기 (점점 반지름 축소)
+            currentRadius *= Mathf.Pow(pullRate, Time.deltaTime * 60f); // 프레임 보정
+
+            // 3. 새로운 위치 계산
+            Vector3 offset = new Vector3(Mathf.Cos(currentAngle), Mathf.Sin(currentAngle), 0f) * currentRadius;
+            transform.position = blackholeCenter.position + offset;
+
+            // 4. 점점 작아지기
+            transform.localScale = Vector3.Lerp(transform.localScale, Vector3.zero, shrinkSpeed * Time.deltaTime);
+
+            // 5. 크기 기준 or 거리 기준으로 제거
+            float avgScale = (transform.localScale.x + transform.localScale.y + transform.localScale.z) / 3f;
+            if (avgScale < minScaleThreshold || currentRadius < minRadiusThreshold)
             {
-                blackholeCenter = collision.gameObject.transform;
-                GameManager.Instance.Score(score);
-                StartBlackhole();
+                RosenBridge.Instance.EatPlanet(currentSO.planetType);
+                Destroy(gameObject);
             }
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            if (collision.GetComponent<BlackHole>().diameter >= diameter && !isAte)
+            {
+                GameManager.Instance.Score(score);
+                StartBlackhole();
+                isAte = true;
+            }
+            else
+            {
+                isTry = true;
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            isTry = false;
+            transform.localScale = new Vector2(currentScale,currentScale);
+        }
+    }
 }

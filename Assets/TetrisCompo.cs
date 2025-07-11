@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +19,7 @@ public class TetrisCompo : MonoBehaviour
     private Transform[] spawnPoints;
 
     private List<PlanetTetrisBlock> fieldTetris=new();
+    private List<PlanetTetrisBlock> destoryBlock=new();
 
     [field: SerializeField] public float MoveSpeed { get; set; }
 
@@ -28,6 +30,37 @@ public class TetrisCompo : MonoBehaviour
             getPlanetsDictionary.Add(type, planetPrefabs[idx]);
             Debug.Log($"{planetPrefabs[idx].name}");
             idx++;
+        }
+    }
+
+    public void DestroyTetrisBlock()
+    {
+        List<PlanetTetrisBlock> toDestroy = new();
+
+        foreach (PlanetTetrisBlock block in fieldTetris)
+        {
+            if (block.isBoom)
+            {
+                toDestroy.Add(block);
+            }
+        }
+
+        foreach (var block in toDestroy)
+        {
+            fieldTetris.Remove(block);
+            destoryBlock.Add(block);
+        }
+
+        StartCoroutine(DestroyRoutine());
+    }
+
+
+    private IEnumerator DestroyRoutine()
+    {
+        yield return new WaitForSeconds(1f);
+        foreach (PlanetTetrisBlock block in destoryBlock)
+        {
+            Destroy(block.gameObject);
         }
     }
 
@@ -49,8 +82,10 @@ public class TetrisCompo : MonoBehaviour
         Vector2 moveDir = InputReader.TetrisInputDirection;
         if (moveDir.y > 0f) moveDir.y = 0f;
 
+
+        if (fieldTetris.Count <= 0) return;
         if (fieldTetris[0].isPlace) RemoveTetris();
         else
-            fieldTetris[0].RbCompo.linearVelocity = moveDir * MoveSpeed;
+            fieldTetris[0].RbCompo.linearVelocity = new Vector3(moveDir.x * MoveSpeed, fieldTetris[0].RbCompo.linearVelocityY);
     }
 }
