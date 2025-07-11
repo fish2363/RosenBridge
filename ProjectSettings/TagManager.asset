@@ -52,5 +52,8 @@ TagManager:
   - name: Planet
     uniqueID: 1808159521
     locked: 0
+  - name: Wallet
+    uniqueID: 3252154689
+    locked: 0
   m_RenderingLayers:
   - Default

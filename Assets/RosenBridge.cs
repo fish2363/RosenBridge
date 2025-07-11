@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening; // 두트윈 네임스페이스
 using UnityEngine.UI;
+using TMPro;
 
 public class RosenBridge : MonoBehaviour
 {
