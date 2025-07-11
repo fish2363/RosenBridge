@@ -2035,7 +2035,7 @@ MonoBehaviour:
   - {fileID: 111079826}
   - {fileID: 1576085303}
   <MoveSpeed>k__BackingField: 5
-  <RotateSpeed>k__BackingField: 35
+  <RotateSpeed>k__BackingField: 100
 --- !u!1 &1445355527
 GameObject:
   m_ObjectHideFlags: 0
