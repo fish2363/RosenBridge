@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dbb2d5b4aea2eb499c376cab69de866, type: 3}
+  m_Name: EatSOList
+  m_EditorClassIdentifier: 
+  eatSOs:
+  - {fileID: 11400000, guid: 36a7acd5bc1a1aa44a507e1c6eb26ea5, type: 2}
+  - {fileID: 11400000, guid: cb50d2685d13e3d42b22acebb8eb676d, type: 2}
+  - {fileID: 11400000, guid: aaa97a263de3e8a41a993ed8752ecf69, type: 2}
+  - {fileID: 11400000, guid: e3e2cc01a5bdd1f4bb2f4d2f1ab89d52, type: 2}
+  - {fileID: 11400000, guid: e7440402e619b1a4bba028d38d931b76, type: 2}
+  - {fileID: 11400000, guid: 0dc97520f96fe1b4f9e5077f57fc2418, type: 2}
+  - {fileID: 11400000, guid: 2972f3e12d1c5ab4d8e9002a26a8ff21, type: 2}
+  - {fileID: 11400000, guid: cdcea22818389f146a751775e8141334, type: 2}
