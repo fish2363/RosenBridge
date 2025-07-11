@@ -8,6 +8,8 @@ public class RosenBridge : MonoBehaviour
 {
     public static RosenBridge Instance;
 
+    [SerializeField] private TetrisCompo _tetrisCompo;
+
     [SerializeField] private Transform left;
     [SerializeField] private Transform right;
     [SerializeField] private GameObject planetPrefabs;
@@ -51,6 +53,7 @@ public class RosenBridge : MonoBehaviour
         {
             tf.DOScale(Vector3.zero, 0.5f).SetEase(Ease.InBack).OnComplete(() =>
             {
+                _tetrisCompo.SpawnTetris(planet);
                 Destroy(p);
             });
         });
