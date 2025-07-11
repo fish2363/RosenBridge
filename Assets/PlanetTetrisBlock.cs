@@ -30,8 +30,7 @@ public class PlanetTetrisBlock : MonoBehaviour
 
     public void StartBlinking()
     {
-        if (isBlinking || sr == null) return;
-
+        if (isBlinking || isBoom) return;
         isBlinking = true;
         StartCoroutine(BlinkRoutine());
     }

@@ -44,6 +44,10 @@ public class RosenBridge : MonoBehaviour
     {
         GameObject p = Instantiate(planetPrefabs, gameObject.transform);
         p.GetComponent<RectTransform>().position = left.position;
+        if (planet == PlanetType.Venus)
+            p.GetComponent<BugUIFix>().FixLong();
+        if (planet == PlanetType.Earth)
+            p.GetComponent<BugUIFix>().FixEarth();
         var sr = p.GetComponent<Image>();
         sr.sprite = getPlanetsDictionary[planet];
 

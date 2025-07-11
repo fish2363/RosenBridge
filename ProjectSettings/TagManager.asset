@@ -46,11 +46,11 @@ TagManager:
   - name: BackGround
     uniqueID: 2954150139
     locked: 0
-  - name: Planet
-    uniqueID: 1808159521
-    locked: 0
   - name: Player
     uniqueID: 4178065917
+    locked: 0
+  - name: Planet
+    uniqueID: 1808159521
     locked: 0
   m_RenderingLayers:
   - Default

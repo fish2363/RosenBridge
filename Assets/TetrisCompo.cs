@@ -19,9 +19,10 @@ public class TetrisCompo : MonoBehaviour
     private Transform[] spawnPoints;
 
     private List<PlanetTetrisBlock> fieldTetris=new();
-    private List<PlanetTetrisBlock> destoryBlock=new();
 
+    [Header("테트리스 블럭 설정값")]
     [field: SerializeField] public float MoveSpeed { get; set; }
+    [field: SerializeField] public float RotateSpeed { get; set; }
 
     private void Awake()
     {
@@ -33,36 +34,9 @@ public class TetrisCompo : MonoBehaviour
         }
     }
 
-    public void DestroyTetrisBlock()
-    {
-        List<PlanetTetrisBlock> toDestroy = new();
+    
 
-        foreach (PlanetTetrisBlock block in fieldTetris)
-        {
-            if (block.isBoom)
-            {
-                toDestroy.Add(block);
-            }
-        }
-
-        foreach (var block in toDestroy)
-        {
-            fieldTetris.Remove(block);
-            destoryBlock.Add(block);
-        }
-
-        StartCoroutine(DestroyRoutine());
-    }
-
-
-    private IEnumerator DestroyRoutine()
-    {
-        yield return new WaitForSeconds(1f);
-        foreach (PlanetTetrisBlock block in destoryBlock)
-        {
-            Destroy(block.gameObject);
-        }
-    }
+    
 
     public void SpawnTetris(PlanetType type)
     {
@@ -70,6 +44,17 @@ public class TetrisCompo : MonoBehaviour
         Transform spawnPoint = spawnPoints[rand];
         PlanetTetrisBlock tetris = Instantiate(getPlanetsDictionary[type],spawnPoint.position,Quaternion.identity).GetComponent<PlanetTetrisBlock>();
         fieldTetris.Add(tetris);
+    }
+
+    public void DestroyTetris()
+    {
+        foreach(PlanetTetrisBlock planet in fieldTetris)
+        {
+            if(planet.isBoom)
+            {
+                fieldTetris.Remove(planet);
+            }
+        }
     }
 
     public void RemoveTetris()
@@ -80,10 +65,14 @@ public class TetrisCompo : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 moveDir = InputReader.TetrisInputDirection;
-        if (moveDir.y > 0f) moveDir.y = 0f;
-
-
         if (fieldTetris.Count <= 0) return;
+        if (moveDir.y > 0f)
+        {
+            moveDir.y = 0f;
+            fieldTetris[0].transform.Rotate(0,0,RotateSpeed*Time.fixedDeltaTime);
+        }
+
+
         if (fieldTetris[0].isPlace) RemoveTetris();
         else
             fieldTetris[0].RbCompo.linearVelocity = new Vector3(moveDir.x * MoveSpeed, fieldTetris[0].RbCompo.linearVelocityY);

@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -53,7 +54,7 @@ public class Line : MonoBehaviour
         }
 
         // 3개 이상 감지된 상태 유지 중
-        if (count >= 3)
+        if (count >= 10)
         {
             detectTimer += Time.fixedDeltaTime;
 
@@ -79,7 +80,7 @@ public class Line : MonoBehaviour
                 blinkingBlocks.Clear();
                 detectTimer = 0f;
 
-                tetrisCompo.DestroyTetrisBlock();
+                StartCoroutine(DestroyRoutine());
             }
         }
         else
@@ -91,6 +92,23 @@ public class Line : MonoBehaviour
                 block?.StopBlinking();
             }
             blinkingBlocks.Clear();
+        }
+    }
+
+    private IEnumerator DestroyRoutine()
+    {
+        tetrisCompo.DestroyTetris();
+        yield return new WaitForSeconds(0.7f);
+
+        // 뒤에서부터 역순으로 제거
+        for (int i = currentDetectedBlocks.Count - 1; i >= 0; i--)
+        {
+            var block = currentDetectedBlocks[i];
+            if (block.isBoom)
+            {
+                currentDetectedBlocks.RemoveAt(i);
+                Destroy(block.gameObject);
+            }
         }
     }
 

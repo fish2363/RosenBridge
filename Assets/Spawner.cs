@@ -24,6 +24,9 @@ public class Spawner : MonoBehaviour
     [Header("레벨 범위별 확률 설정")]
     public LevelPercent[] levelPercents;
 
+    [Header("최대 생성")]
+    public int maxPlanet;
+
     private BlackHole player;
 
     private void Awake()
@@ -39,6 +42,7 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator SpawnRoutine()
     {
+        yield return new WaitWhile(()=> maxPlanet <= planetList.Count);
         waitSecond = UnityEngine.Random.Range(spawnWait.min, spawnWait.max - 1);
         yield return new WaitForSeconds(waitSecond);
         Debug.Log("생성");

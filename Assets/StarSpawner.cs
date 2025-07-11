@@ -19,7 +19,8 @@ public class StarSpawner : MonoBehaviour
 
     private BoxCollider2D area;
     private List<GameObject> planetList = new List<GameObject>();
-
+    [Header("置企 持失")]
+    public int maxPlanet;
 
     void Start()
     {
@@ -29,6 +30,7 @@ public class StarSpawner : MonoBehaviour
 
     private IEnumerator SpawnRoutine()
     {
+        yield return new WaitWhile(() => maxPlanet <= planetList.Count);
         waitSecond = UnityEngine.Random.Range(spawnWait.min, spawnWait.max - 1);
         yield return new WaitForSeconds(waitSecond);
         Debug.Log("持失");
