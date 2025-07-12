@@ -632,6 +632,8 @@ MonoBehaviour:
   <MoveSpeed>k__BackingField: 5
   <RotateSpeed>k__BackingField: 150
   wallSpawnSpeed: 12
+  boomScore: 500
+  EffectPrefabs: {fileID: 6775607032007840371, guid: 2fd9eb0109d95fa468cadf5320d05108, type: 3}
   levelDecreaseWallSpawnSpeed: 0.3
   OnLockEvent:
     m_PersistentCalls:

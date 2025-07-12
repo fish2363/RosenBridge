@@ -107,6 +107,9 @@ MonoBehaviour:
   isPlace: 0
   isBoom: 0
   isBlinking: 0
+  whatIsPutris:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!60 &6382968608630193210
 PolygonCollider2D:
   m_ObjectHideFlags: 0

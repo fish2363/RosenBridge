@@ -14,10 +14,6 @@ public class PlanetTetrisBlock : MonoBehaviour
     {
         RbCompo = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-        if (sr == null)
-        {
-            Debug.LogWarning("SpriteRenderer가 PlanetTetrisBlock에 없습니다.");
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -25,6 +21,7 @@ public class PlanetTetrisBlock : MonoBehaviour
         if (collision.gameObject.CompareTag("Place") || collision.gameObject.CompareTag("Tetris"))
         {
             isPlace = true;
+            gameObject.layer = LayerMask.GetMask("Putris");
         }
     }
 

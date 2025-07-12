@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2739922140275253631}
   - component: {fileID: 1974730570559753000}
   - component: {fileID: 6811027967130316079}
+  - component: {fileID: -1690597967672813656}
   m_Layer: 0
   m_Name: BoomEffect
   m_TagString: Place
@@ -110,3 +111,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-1690597967672813656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6775607032007840371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ce003f0f282ae4f87781247162a18d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

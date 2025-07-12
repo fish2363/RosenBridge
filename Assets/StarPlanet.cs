@@ -45,7 +45,7 @@ public class StarPlanet : MonoBehaviour
 
     void Update()
     {
-        if (!isAbsorbing || blackholeCenter == null) return;
+        if (!isAbsorbing && blackholeCenter == null) return;
 
         // 1. 회전 (라디안 단위로 누적)
         float angleDelta = rotateSpeed * Mathf.Deg2Rad * Time.deltaTime;
