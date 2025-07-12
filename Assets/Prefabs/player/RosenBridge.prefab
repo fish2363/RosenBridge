@@ -137,3 +137,11 @@ MonoBehaviour:
   inAnimation: 29
   outAnimation: 29
   moveAnimation: 10
+  squishScale: 0.8
+  stretchScale: 1.2
+  duration: 0.3
+  loopCount: -1
+  inSound:
+    ID: 0
+    _sourceAsset: {fileID: 0}
+    <DebugObject>k__BackingField: {fileID: 7989914690845827931}
