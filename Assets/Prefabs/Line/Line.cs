@@ -27,6 +27,9 @@ public class Line : MonoBehaviour
     private Tween colorTween;
     private Tween shakeTween;
 
+    [Header("깜빡횟수")] private float redZoneCount=3f;
+    [Header("깜빡빈도")] private float redZoneDuration=0.02f;
+
     private void Start()
     {
         tetrisCompo = FindObjectOfType<TetrisCompo>();
@@ -130,9 +133,19 @@ public class Line : MonoBehaviour
     {
         tetrisCompo.DestroyTetris();
         yield return new WaitForSeconds(0.7f);
+        Time.timeScale = 0f;
+        for (int i=0;i<redZoneCount;i++)
+        {
+            GetComponent<SpriteRenderer>().enabled = true;
+            yield return new WaitForSecondsRealtime(redZoneDuration);
+            GetComponent<SpriteRenderer>().enabled = false;
+            yield return new WaitForSecondsRealtime(redZoneDuration);
+        }
+        Time.timeScale = 1f;
         Instantiate(tetrisCompo.EffectPrefabs, transform);
         tetrisCompo.LineDestroyEffect();
         GameManager.Instance.Score(tetrisCompo.boomScore);
+        yield return new WaitForSecondsRealtime(0.5f);
 
         for (int i = currentDetectedBlocks.Count - 1; i >= 0; i--)
         {
