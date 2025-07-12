@@ -109,6 +109,10 @@ MonoBehaviour:
   isPlace: 0
   isBoom: 0
   isBlinking: 0
+  blockCollision:
+    ID: 1073741838
+    _sourceAsset: {fileID: 11400000, guid: 2904c09302c37c74ebb62a8d35cb650c, type: 2}
+    <DebugObject>k__BackingField: {fileID: 3161072689165126874}
 --- !u!61 &5803325516367425663
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -316,7 +320,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd5d3bb7bd50fa42ae480f24615b598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0
   frequency: 1
   startOnAwake: 1
-  lockRotation: 1

@@ -76,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1808159521
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -2003822949328956021, guid: 8c7e9348090f7ac4aaddf4b667c3c62a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -108,8 +108,14 @@ MonoBehaviour:
   rotateSpeed: 180
   shrinkSpeed: 0.5
   pullRate: 0.97
+  pullDuration: 0.97
+  magnetisRotateSpeed: 180
   minScaleThreshold: 0.1
   minRadiusThreshold: 0.05
+  eatSFX:
+    ID: 1073741848
+    _sourceAsset: {fileID: 11400000, guid: 2904c09302c37c74ebb62a8d35cb650c, type: 2}
+    <DebugObject>k__BackingField: {fileID: 4734704447177704265}
 --- !u!58 &-5600609174124293716
 CircleCollider2D:
   m_ObjectHideFlags: 0

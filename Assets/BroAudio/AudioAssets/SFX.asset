@@ -18,8 +18,8 @@ MonoBehaviour:
     MulticlipsPlayMode: 0
     _group: {fileID: 0}
     Clips:
-    - AudioClip: {fileID: 8300000, guid: 6de3c1e127203f144b266f6676907ef8, type: 3}
-      Volume: 0.03208275
+    - AudioClip: {fileID: 8300000, guid: 7fb5f3bd45eddf248ace20b8f3974a5c, type: 3}
+      Volume: 0.1368604
       Delay: 0
       StartPosition: 0
       EndPosition: 0
@@ -41,15 +41,15 @@ MonoBehaviour:
       BPM: 0
       Beats: 0
     SnapToFullVolume: 0
-  - <Name>k__BackingField: blackhole_eat
+  - <Name>k__BackingField: blackhole_eat_block
     <ID>k__BackingField: 1073741839
     MulticlipsPlayMode: 0
     _group: {fileID: 0}
     Clips:
-    - AudioClip: {fileID: 8300000, guid: 153172028b3f65749a5522445d4271a5, type: 3}
-      Volume: 0.14005671
+    - AudioClip: {fileID: 8300000, guid: 4eb908704983c3f4cb9b9d63d0a6a45b, type: 3}
+      Volume: 0.1608421
       Delay: 0
-      StartPosition: 0
+      StartPosition: 0.065
       EndPosition: 0
       FadeIn: 0
       FadeOut: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
       BPM: 0
       Beats: 0
     SnapToFullVolume: 0
-  - <Name>k__BackingField: 
+  - <Name>k__BackingField: gameover
     <ID>k__BackingField: 1073741840
     MulticlipsPlayMode: 0
     _group: {fileID: 0}
@@ -281,7 +281,7 @@ MonoBehaviour:
       BPM: 0
       Beats: 0
     SnapToFullVolume: 0
-  - <Name>k__BackingField: 
+  - <Name>k__BackingField: good_meteor
     <ID>k__BackingField: 1073741847
     MulticlipsPlayMode: 0
     _group: {fileID: 0}
@@ -291,6 +291,34 @@ MonoBehaviour:
       Delay: 0
       StartPosition: 0.15
       EndPosition: 0.18
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    <MasterVolume>k__BackingField: 1
+    <Loop>k__BackingField: 0
+    <SeamlessLoop>k__BackingField: 0
+    <TransitionTime>k__BackingField: 0
+    <SpatialSetting>k__BackingField: {fileID: 0}
+    <Priority>k__BackingField: 128
+    <Pitch>k__BackingField: 1
+    <PitchRandomRange>k__BackingField: 0
+    <VolumeRandomRange>k__BackingField: 0
+    <RandomFlags>k__BackingField: 0
+    SeamlessTransitionType: 0
+    TransitionTempo:
+      BPM: 0
+      Beats: 0
+    SnapToFullVolume: 0
+  - <Name>k__BackingField: star_eat
+    <ID>k__BackingField: 1073741848
+    MulticlipsPlayMode: 0
+    _group: {fileID: 0}
+    Clips:
+    - AudioClip: {fileID: 8300000, guid: 153172028b3f65749a5522445d4271a5, type: 3}
+      Volume: 0.09774304
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
       FadeIn: 0
       FadeOut: 0
       Weight: 0

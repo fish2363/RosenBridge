@@ -625,6 +625,22 @@ MonoBehaviour:
   - {fileID: 5910885459680678423}
   - {fileID: 3123560588640539420}
   - {fileID: 6159967884932464786}
+  spawnWall:
+    ID: 1073741844
+    _sourceAsset: {fileID: 11400000, guid: 2904c09302c37c74ebb62a8d35cb650c, type: 2}
+    <DebugObject>k__BackingField: {fileID: 8405923060385187746}
+  deSpawnWall:
+    ID: 1073741845
+    _sourceAsset: {fileID: 11400000, guid: 2904c09302c37c74ebb62a8d35cb650c, type: 2}
+    <DebugObject>k__BackingField: {fileID: 8405923060385187746}
+  lazerSound:
+    ID: 1073741841
+    _sourceAsset: {fileID: 11400000, guid: 2904c09302c37c74ebb62a8d35cb650c, type: 2}
+    <DebugObject>k__BackingField: {fileID: 8405923060385187746}
+  destroyPlanetSound:
+    ID: 1073741846
+    _sourceAsset: {fileID: 11400000, guid: 2904c09302c37c74ebb62a8d35cb650c, type: 2}
+    <DebugObject>k__BackingField: {fileID: 8405923060385187746}
   spawnPoints:
   - {fileID: 2489010885783528721}
   - {fileID: 5663595469225630589}
@@ -633,7 +649,7 @@ MonoBehaviour:
   - {fileID: 23340447575894579}
   <MoveSpeed>k__BackingField: 5
   <RotateSpeed>k__BackingField: 200
-  wallSpawnSpeed: 12
+  wallSpawnSpeed: 10
   boomScore: 500
   EffectPrefabs: {fileID: 6775607032007840371, guid: 2fd9eb0109d95fa468cadf5320d05108, type: 3}
   levelDecreaseWallSpawnSpeed: 0.5
