@@ -5,6 +5,8 @@ using UnityEngine;
 public class InputReader : ScriptableObject, PlayerInput.IBlackHoleActions
 {
     public event Action OnEscKeyPressed;
+    public event Action OnReStartKeyPressed;
+    public event Action OnMainMenuKeyPressed;
     public Vector2 HoleInputDirection { get; private set; }
     public Vector2 TetrisInputDirection { get; private set; }
 
@@ -39,5 +41,17 @@ public class InputReader : ScriptableObject, PlayerInput.IBlackHoleActions
     public void OnTetris(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
         TetrisInputDirection = context.ReadValue<Vector2>();
+    }
+
+    public void OnMainMeun(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    {
+        if (context.performed)
+            OnMainMenuKeyPressed?.Invoke();
+    }
+
+    public void OnReStart(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    {
+        if (context.performed)
+            OnReStartKeyPressed?.Invoke();
     }
 }

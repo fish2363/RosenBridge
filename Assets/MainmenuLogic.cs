@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UI;
 
 public class MainmenuLogic : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class MainmenuLogic : MonoBehaviour
     public Volume volume;
     public SineMover[] SineMover;
     public Camera Camera;
+    private bool isRotate;
+    public Image white;
 
     void Start()
     {
@@ -30,22 +33,35 @@ public class MainmenuLogic : MonoBehaviour
             toValue,
             duration
         ).SetEase(Ease.InOutSine);
-        DOTween.To(() => Camera.orthographicSize, x => Camera.orthographicSize = x, 0.56f, 1f);
+        
     }
 
     public void GameStart()
     {
-        for(int i =0;i<SineMover.Length;i++)
+        AnimateDistortion(-0.49f, 1f);
+        for (int i =0;i<SineMover.Length;i++)
         {
             SineMover[i].enabled = false;
         }
-        GetComponent<CanvasGroup>().DOFade(0f,0.2f);
+        GetComponentInChildren<CanvasGroup>().DOFade(0f,0.2f);
         timeline.Play();
     }
 
     public void InToVoid()
     {
+        DOTween.To(() => Camera.orthographicSize, x => {
+            Camera.orthographicSize = x;
+        }, 0.56f, 0.5f).OnComplete(()=> { 
+        white.DOFade(1f, 0.3f);
+        });
         AnimateDistortion(-1f, 1f);
+        isRotate = true;
+    }
+
+    private void Update()
+    {
+        if(isRotate)
+        Camera.transform.parent.Rotate(0f,0f, 270f*Time.deltaTime);
     }
 
     public void StartTutorial()

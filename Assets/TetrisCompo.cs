@@ -130,21 +130,37 @@ public class TetrisCompo : MonoBehaviour
         int rand = UnityEngine.Random.Range(0, spawnPoints.Length);
         Transform spawnPoint = spawnPoints[rand];
 
-        Vector3 pos = spawnPoint.position;
+        GameObject prefab = getPlanetsDictionary[type];
+        GameObject instance = Instantiate(prefab, spawnPoint.position, Quaternion.identity);
+        PlanetTetrisBlock tetris = instance.GetComponent<PlanetTetrisBlock>();
 
-        // 벽과의 거리 계산
         float left = leftWall.transform.position.x;
         float right = rightWall.transform.position.x;
-        float minGap = 0.6f; // 벽과 최소 간격 (Collider 크기 기준)
 
-        if (Mathf.Abs(pos.x - left) < minGap)
-            pos.x = left + minGap;
+        float halfWidth = GetBlockHalfWidth(instance);
 
-        if (Mathf.Abs(pos.x - right) < minGap)
-            pos.x = right - minGap;
+        Vector3 pos = instance.transform.position;
 
-        PlanetTetrisBlock tetris = Instantiate(getPlanetsDictionary[type], pos, Quaternion.identity).GetComponent<PlanetTetrisBlock>();
+        // 좌우 벽 충돌 방지
+        if (pos.x - halfWidth < left)
+            pos.x = left + halfWidth;
+        else if (pos.x + halfWidth > right)
+            pos.x = right - halfWidth;
+
+        instance.transform.position = pos;
         fieldTetris.Add(tetris);
+    }
+
+    private float GetBlockHalfWidth(GameObject block)
+    {
+        Collider2D col = block.GetComponentInChildren<Collider2D>();
+        if (col != null)
+        {
+            return col.bounds.extents.x;
+        }
+
+        // fallback: 기본값
+        return 0.5f;
     }
 
     public void DestroyTetris()
@@ -187,4 +203,17 @@ public class TetrisCompo : MonoBehaviour
         else
             fieldTetris[0].RbCompo.linearVelocity = new Vector3(moveDir.x * MoveSpeed, fieldTetris[0].RbCompo.linearVelocityY);
     }
+
+    void OnDrawGizmosSelected()
+    {
+        if (Application.isPlaying && fieldTetris.Count > 0)
+        {
+            GameObject block = fieldTetris[0].gameObject;
+            float hw = GetBlockHalfWidth(block);
+            Gizmos.color = Color.yellow;
+            Vector3 pos = block.transform.position;
+            Gizmos.DrawLine(pos + Vector3.left * hw, pos + Vector3.right * hw);
+        }
+    }
+
 }
