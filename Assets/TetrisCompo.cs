@@ -223,11 +223,15 @@ public class TetrisCompo : MonoBehaviour
     }
     private IEnumerator BoomRoutine()
     {
+        foreach(PlanetTetrisBlock game in fieldTetris)
+            game.isBoom = true;
+
         foreach (GameObject line in walletPrefabs)
         {
             line.GetComponent<Line>().ForceDestroy();
             yield return new WaitForSecondsRealtime(0.2f);
         }
+        isForce = false;
     }
     void OnDrawGizmosSelected()
     {

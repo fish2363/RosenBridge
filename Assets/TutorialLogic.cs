@@ -74,6 +74,7 @@ public class TutorialLogic : MonoBehaviour
         {
             TutorialIN(-10f);
             _text.text = "";
+            _text.gameObject.SetActive(false);
             GetComponent<CanvasGroup>().alpha = 0f;
             isOn = false;
         }
