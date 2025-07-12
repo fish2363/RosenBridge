@@ -231,7 +231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 896c1e70c8617bc4da508221e54b8882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tetrisCompo: {fileID: 0}
   currentCamera: {fileID: 4815686782393291737}
   InputReader: {fileID: 11400000, guid: f6f81044fc533c34fbad0e329da0fa30, type: 2}
   _rigid: {fileID: 1278049935593190098}
@@ -267,37 +266,37 @@ MonoBehaviour:
     cameraSize: 70
   - levelSize: 11
     levelSpeed: 15
-    cameraSize: 70
+    cameraSize: 80
   - levelSize: 12
     levelSpeed: 15
-    cameraSize: 70
+    cameraSize: 80
   - levelSize: 13
     levelSpeed: 15
-    cameraSize: 70
+    cameraSize: 80
   - levelSize: 14
     levelSpeed: 15
-    cameraSize: 70
+    cameraSize: 80
   - levelSize: 15
     levelSpeed: 15
-    cameraSize: 70
+    cameraSize: 80
   - levelSize: 16
     levelSpeed: 15
-    cameraSize: 70
+    cameraSize: 80
   - levelSize: 17
     levelSpeed: 15
-    cameraSize: 70
+    cameraSize: 80
   - levelSize: 18
     levelSpeed: 15
-    cameraSize: 70
+    cameraSize: 80
   - levelSize: 19
     levelSpeed: 15
-    cameraSize: 70
+    cameraSize: 80
   - levelSize: 20
     levelSpeed: 15
-    cameraSize: 70
+    cameraSize: 80
   - levelSize: 21
     levelSpeed: 15
-    cameraSize: 70
+    cameraSize: 80
   diameter: 0
 --- !u!50 &1278049935593190098
 Rigidbody2D:

@@ -21,7 +21,7 @@ public class PlanetTetrisBlock : MonoBehaviour
         if (collision.gameObject.CompareTag("Place") || collision.gameObject.CompareTag("Tetris"))
         {
             isPlace = true;
-            gameObject.layer = LayerMask.GetMask("Putris");
+            gameObject.layer = LayerMask.NameToLayer("Putris");
         }
     }
 
