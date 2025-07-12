@@ -32,17 +32,28 @@ public class BlackHole : MonoBehaviour
     [SerializeField]
     private SoundID levelUp;
 
+
+    [Header("스턴 시간")]
+    public float stunDuration;
+    float duri;
+    bool isDamage;
+
     private void Start()
     {
         col = GetComponent<CircleCollider2D>();
         tetrisCompo = FindAnyObjectByType<TetrisCompo>();
         SetPlayerSetting(levelSetting[0].levelSpeed,levelSetting[0].levelSize);
     }
-
+    public void DamagePlayer()
+    {
+        if (isDamage) return;
+        isDamage = true;
+    }
     public void PlusLevel()
     {
         Level++;
         BroAudio.Play(levelUp);
+        FindAnyObjectByType<MeteoSpawner>().SpawnWhiteTetBoomSpawn();
         tetrisCompo.DecreaseWallSpawnSpeed(tetrisCompo.levelDecreaseWallSpawnSpeed);
         if (Level > levelSetting.Length) return;
         Debug.Log($"{Level}레벨");
@@ -64,9 +75,20 @@ public class BlackHole : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 moveDir = InputReader.HoleInputDirection;
+        if(isDamage)
+        {
+            duri += Time.deltaTime;
+            if(duri >= stunDuration)
+            {
+                isDamage = false;
+            }
+        }
+        else
+        {
+            Vector2 moveDir = InputReader.HoleInputDirection;
 
-        _rigid.linearVelocity = moveDir * MoveSpeed;
+            _rigid.linearVelocity = moveDir * MoveSpeed;
+        }
     }
 }
 

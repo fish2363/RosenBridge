@@ -60,6 +60,11 @@ public class TetrisCompo : MonoBehaviour
     public UnityEvent OnUNLockEvent;
     public UnityEvent OnLineDestroyEvent;
 
+    [SerializeField]
+    private GameObject meteo;
+    [SerializeField]
+    private GameObject meteoSpawn;
+
     private void Awake()
     {
         foreach (PlanetType type in Enum.GetValues(typeof(PlanetType)))
@@ -76,7 +81,8 @@ public class TetrisCompo : MonoBehaviour
         wallSpawnSpeed -= value;
     }
 
-        private void Update()
+
+    private void Update()
     {
         wallSpawnIdx += Time.deltaTime;
         currentScore = GameManager.Instance.CurrentScore;
@@ -203,7 +209,23 @@ public class TetrisCompo : MonoBehaviour
         else
             fieldTetris[0].RbCompo.linearVelocity = new Vector3(moveDir.x * MoveSpeed, fieldTetris[0].RbCompo.linearVelocityY);
     }
+    public void BlueBoom()
+    {
+        Instantiate(meteo,meteoSpawn.transform.position,Quaternion.identity);
+    }
 
+    public void LineBlueBoom()
+    {
+        StartCoroutine(BoomRoutine());
+    }
+    private IEnumerator BoomRoutine()
+    {
+        foreach (GameObject line in walletPrefabs)
+        {
+            line.GetComponent<Line>().ForceDestroy();
+            yield return new WaitForSecondsRealtime(0.2f);
+        }
+    }
     void OnDrawGizmosSelected()
     {
         if (Application.isPlaying && fieldTetris.Count > 0)

@@ -257,7 +257,11 @@ public class Line : MonoBehaviour
             duration
         ).SetEase(Ease.InOutSine));
     }
-
+    public void ForceDestroy()
+    {
+        StopAllCoroutines(); // 혹시 모를 중복 방지
+        StartCoroutine(DestroyRoutine());
+    }
     private void OnDrawGizmosSelected()
     {
         var col = GetComponent<Collider2D>();

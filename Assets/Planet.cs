@@ -71,7 +71,6 @@ public class Planet : MonoBehaviour
             transform.localScale = Vector3.Lerp(transform.localScale, Vector3.zero, shrinkSpeed * Time.deltaTime);
             transform.position = Vector3.Lerp(transform.position, blackholeCenter.position, magnetismSpeed * Time.deltaTime);
         }
-
         if (isAbsorbing && blackholeCenter != null)
         {
             // 1. 회전 (라디안 단위로 누적)

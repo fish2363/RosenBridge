@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainmenuLogic : MonoBehaviour
@@ -56,7 +57,7 @@ public class MainmenuLogic : MonoBehaviour
         });
         AnimateDistortion(-1f, 1f);
         white.DOFade(1f,0.6f);
-        DOVirtual.DelayedCall(5f,()=> { black.DOFade(1f, 1f); });
+        DOVirtual.DelayedCall(5f,()=> { black.DOFade(1f, 1f).OnComplete(()=>SceneManager.LoadScene("GameScene")); });
         isRotate = true;
     }
 
