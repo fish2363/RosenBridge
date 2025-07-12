@@ -18,10 +18,14 @@ public class Line : MonoBehaviour
 
     private float currentCoverage = 0f; // 👉 기즈모용 필드 추가
 
+    private SpriteRenderer wallet;
+
     private void Start()
     {
         tetrisCompo = FindObjectOfType<TetrisCompo>();
         myCollider = GetComponent<Collider2D>();
+        wallet = GetComponentInChildren<Wallet>().gameObject.GetComponent<SpriteRenderer>();
+
         if (myCollider == null)
         {
             Debug.LogError("Collider2D가 없습니다!");
@@ -30,6 +34,18 @@ public class Line : MonoBehaviour
         }
 
         tetrisLayer = LayerMask.NameToLayer("Tetris");
+    }
+
+    public void UnLockLine()
+    {
+        wallet.enabled = true;
+        myCollider.isTrigger = false;
+    }
+
+    public void LockLine()
+    {
+        wallet.enabled = false;
+        myCollider.isTrigger = true;
     }
 
     private void FixedUpdate()
@@ -105,7 +121,7 @@ public class Line : MonoBehaviour
     {
         tetrisCompo.DestroyTetris();
         yield return new WaitForSeconds(0.7f);
-
+        tetrisCompo.LineDestroyEffect();
         for (int i = currentDetectedBlocks.Count - 1; i >= 0; i--)
         {
             var block = currentDetectedBlocks[i];

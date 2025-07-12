@@ -5,6 +5,9 @@ using TMPro;
 public class BlackHole : MonoBehaviour
 {
     [SerializeField]
+    private TetrisCompo tetrisCompo;
+
+    [SerializeField]
     private Camera currentCamera;
     [SerializeField]
     private InputReader InputReader;
@@ -28,12 +31,14 @@ public class BlackHole : MonoBehaviour
     private void Start()
     {
         col = GetComponent<CircleCollider2D>();
+        tetrisCompo = FindAnyObjectByType<TetrisCompo>();
         SetPlayerSetting(levelSetting[0].levelSpeed,levelSetting[0].levelSize);
     }
 
     public void PlusLevel()
     {
         Level++;
+        tetrisCompo.DecreaseWallSpawnSpeed(tetrisCompo.levelDecreaseWallSpawnSpeed);
         if (Level > levelSetting.Length) return;
         Debug.Log($"{Level}·¹º§");
         SetPlayerSetting(levelSetting[Level-1].levelSpeed, levelSetting[Level-1].levelSize);

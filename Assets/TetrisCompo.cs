@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TetrisCompo : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class TetrisCompo : MonoBehaviour
 
     [SerializeField]
     private GameObject[] walletPrefabs;
+    private int wallIdx;
+    private float firstScore;
+    private float currentScore;
+    private bool isOneTime = true;
 
     [SerializeField]
     private Transform[] spawnPoints;
@@ -26,6 +31,17 @@ public class TetrisCompo : MonoBehaviour
     [Header("테트리스 블럭 설정값")]
     [field: SerializeField] public float MoveSpeed { get; set; }
     [field: SerializeField] public float RotateSpeed { get; set; }
+
+    [Header("벽 생성 속도")]
+    [SerializeField] private float wallSpawnSpeed;
+    private float wallSpawnIdx;
+
+    [Header("레벨당 생성 속도 감소")]
+    public float levelDecreaseWallSpawnSpeed =0.2f;
+
+    public UnityEvent OnLockEvent;
+    public UnityEvent OnUNLockEvent;
+    public UnityEvent OnLineDestroyEvent;
 
     private void Awake()
     {
@@ -37,6 +53,55 @@ public class TetrisCompo : MonoBehaviour
         }
     }
 
+    public void DecreaseWallSpawnSpeed(float value) => wallSpawnSpeed -= value;
+
+    private void Update()
+    {
+        wallSpawnIdx += Time.deltaTime;
+        currentScore = GameManager.Instance.CurrentScore;
+
+        if(wallSpawnIdx > wallSpawnSpeed)
+        {
+            LockLastLine();
+            wallSpawnIdx = 0f;
+            if (isOneTime)
+            {
+                firstScore = GameManager.Instance.CurrentScore;
+                isOneTime = false;
+            }
+        }
+        if(firstScore + 500f <= currentScore)
+        {
+            firstScore = currentScore;
+            UnLockFirstLine();
+        }
+    }
+
+    public void UnLockFirstLine()
+    {
+        if (wallIdx <= 0) return;
+        wallIdx--;
+        walletPrefabs[wallIdx].GetComponent<Line>().LockLine();
+        OnUNLockEvent?.Invoke();
+    }
+
+    [ContextMenu("TestLockEvent")]
+    public void TestLockEvent() => OnLockEvent?.Invoke();
+
+    [ContextMenu("TestUNLockEvent")]
+    public void TestUNLockEvent() => OnUNLockEvent?.Invoke();
+
+
+    [ContextMenu("LineDestroyEffect")]
+    public void LineDestroyEffect() => OnLineDestroyEvent?.Invoke();
+
+    public void LockLastLine()
+    {
+        if (walletPrefabs.Length -1 < wallIdx) return;
+        walletPrefabs[wallIdx].GetComponent<Line>().UnLockLine();
+        wallIdx++;
+        OnLockEvent?.Invoke();
+    }
 
     public void SpawnTetris(PlanetType type)
     {
