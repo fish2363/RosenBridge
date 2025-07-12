@@ -8,4 +8,8 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Mars
   m_Controller: {fileID: 9100000, guid: 7d4df44fb66fc384fb5c4d9ecd53d00d, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 54663641713cf874dab30c9e32549dff, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8ee7420228a67dc42add4a9c7c172332, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: af8516ccef1ec3e4791e7966906197a4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 84d66048f25ad5c40a8974885a19eadc, type: 2}

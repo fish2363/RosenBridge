@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000fd3908f92153c66bfbc014b041f1d7c1
+  m_ApplyToSortingLayers: 00000000fd3908f92153c66bfbc014b041f1d7c11d1eb841
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -3035,6 +3035,7 @@ MonoBehaviour:
   <MoveSpeed>k__BackingField: 5
   <RotateSpeed>k__BackingField: 100
   wallSpawnSpeed: 7
+  EffectPrefabs: {fileID: 0}
   levelDecreaseWallSpawnSpeed: 0.2
   OnLockEvent:
     m_PersistentCalls:
