@@ -57,13 +57,21 @@ MonoBehaviour:
       BPM: 0
       Beats: 0
     SnapToFullVolume: 0
-  - <Name>k__BackingField: 
+  - <Name>k__BackingField: MainScreenBGM
     <ID>k__BackingField: 268435459
     MulticlipsPlayMode: 0
     _group: {fileID: 0}
-    Clips: []
+    Clips:
+    - AudioClip: {fileID: 8300000, guid: ce2bdc71de8221046b5109f02c551f46, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
     <MasterVolume>k__BackingField: 1
-    <Loop>k__BackingField: 0
+    <Loop>k__BackingField: 1
     <SeamlessLoop>k__BackingField: 0
     <TransitionTime>k__BackingField: -1
     <SpatialSetting>k__BackingField: {fileID: 0}
