@@ -92,8 +92,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnWait:
-    min: 3
-    max: 5
+    min: 2
+    max: 4
   EatSOList: {fileID: 11400000, guid: b51d3100a16c4b644b8d19affd9a50a1, type: 2}
   count: 10
-  starScore: 1000
+  starScore: 10
+  maxPlanet: 1000

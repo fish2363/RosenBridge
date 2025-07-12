@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.48151293, y: 0.48151293, z: 0.48151293}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.48151293}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -143,7 +143,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4, y: 4}
+    oldSize: {x: 6.25, y: 6.25}
     newSize: {x: 4, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -151,14 +151,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.49, y: 0.005153205}
-      - {x: 0.49, y: 1.01}
-      - {x: -1.51, y: 1.01}
-      - {x: -1.5099682, y: -0.007}
-      - {x: -0.5073579, y: -0.007}
-      - {x: -0.5073579, y: -1.0100005}
-      - {x: 1.51, y: -1.01}
-      - {x: 1.51, y: 0.005153205}
+    - - {x: 0.8427832, y: -0.14061908}
+      - {x: 0.8427832, y: 1.4224705}
+      - {x: -2.2814844, y: 1.42247}
+      - {x: -2.281484, y: -0.1406191}
+      - {x: -0.7193533, y: -0.1406191}
+      - {x: -0.7193533, y: -1.7030799}
+      - {x: 2.4061995, y: -1.70308}
+      - {x: 2.4061995, y: -0.1406191}
   m_UseDelaunayMesh: 0
 --- !u!50 &-7313601149167271692
 Rigidbody2D:

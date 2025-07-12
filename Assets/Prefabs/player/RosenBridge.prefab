@@ -124,7 +124,7 @@ MonoBehaviour:
   left: {fileID: 1999856110764522433}
   right: {fileID: 7024263416793628865}
   planetPrefabs: {fileID: 7591127884392873348, guid: 533ecab3ea67dad4c85560897c19571a, type: 3}
-  moveDuration: 7
+  moveDuration: 5
   planetSprites:
   - {fileID: 7546481892259325517, guid: 8c7e9348090f7ac4aaddf4b667c3c62a, type: 3}
   - {fileID: 1095573800834144694, guid: 8c7e9348090f7ac4aaddf4b667c3c62a, type: 3}
@@ -134,6 +134,6 @@ MonoBehaviour:
   - {fileID: -8604889420044787368, guid: 8c7e9348090f7ac4aaddf4b667c3c62a, type: 3}
   - {fileID: -5024438999028153796, guid: 8c7e9348090f7ac4aaddf4b667c3c62a, type: 3}
   - {fileID: -2895846352700540677, guid: 8c7e9348090f7ac4aaddf4b667c3c62a, type: 3}
-  inAnimation: 9
-  outAnimation: 9
-  moveAnimation: 4
+  inAnimation: 29
+  outAnimation: 29
+  moveAnimation: 10
