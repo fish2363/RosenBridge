@@ -652,7 +652,7 @@ MonoBehaviour:
   wallSpawnSpeed: 10
   boomScore: 500
   EffectPrefabs: {fileID: 6775607032007840371, guid: 2fd9eb0109d95fa468cadf5320d05108, type: 3}
-  levelDecreaseWallSpawnSpeed: 0.5
+  levelDecreaseWallSpawnSpeed: 0.45
   OnLockEvent:
     m_PersistentCalls:
       m_Calls:
