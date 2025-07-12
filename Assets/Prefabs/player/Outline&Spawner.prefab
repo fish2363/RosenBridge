@@ -50,11 +50,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnWait:
-    min: 3
-    max: 5
+    min: 1
+    max: 3
   EatSOList: {fileID: 11400000, guid: 5453e67a2e1924c48a9e7519e5df5170, type: 2}
-  count: 3
-  levelScore: 32000000640000002c010000
+  count: 5
+  levelScore: 32000000c8000000f4010000
   levelPercents:
   - minLevel: 1
     maxLevel: 2
@@ -77,22 +77,22 @@ MonoBehaviour:
   - minLevel: 9
     maxLevel: 11
     percent:
-      firstPlanet: 10
+      firstPlanet: 0
       secondPlanet: 60
-      thirdPlanet: 30
+      thirdPlanet: 40
   - minLevel: 12
     maxLevel: 14
     percent:
       firstPlanet: 0
-      secondPlanet: 50
-      thirdPlanet: 50
+      secondPlanet: 40
+      thirdPlanet: 60
   - minLevel: 15
     maxLevel: 30
     percent:
       firstPlanet: 0
       secondPlanet: 20
       thirdPlanet: 80
-  maxPlanet: 20
+  maxPlanet: 15
 --- !u!61 &7830440089598259405
 BoxCollider2D:
   m_ObjectHideFlags: 0

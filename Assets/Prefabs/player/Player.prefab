@@ -206,7 +206,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -116901379
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -231,71 +231,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 896c1e70c8617bc4da508221e54b8882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tetrisCompo: {fileID: 0}
   currentCamera: {fileID: 4815686782393291737}
   InputReader: {fileID: 11400000, guid: f6f81044fc533c34fbad0e329da0fa30, type: 2}
   _rigid: {fileID: 1278049935593190098}
   <MoveSpeed>k__BackingField: 4
+  levelText: {fileID: 0}
   levelSetting:
   - levelSize: 2
-    levelSpeed: 15
-    cameraSize: 70
-  - levelSize: 2.5
     levelSpeed: 15
     cameraSize: 70
   - levelSize: 3
     levelSpeed: 15
     cameraSize: 70
-  - levelSize: 3.5
-    levelSpeed: 15
-    cameraSize: 70
   - levelSize: 4
-    levelSpeed: 15
-    cameraSize: 70
-  - levelSize: 4.5
     levelSpeed: 15
     cameraSize: 70
   - levelSize: 5
     levelSpeed: 15
     cameraSize: 70
-  - levelSize: 5.5
-    levelSpeed: 15
-    cameraSize: 70
   - levelSize: 6
-    levelSpeed: 15
-    cameraSize: 70
-  - levelSize: 6.5
     levelSpeed: 15
     cameraSize: 70
   - levelSize: 7
     levelSpeed: 15
     cameraSize: 70
-  - levelSize: 7.5
-    levelSpeed: 15
-    cameraSize: 70
   - levelSize: 8
-    levelSpeed: 15
-    cameraSize: 70
-  - levelSize: 8.5
     levelSpeed: 15
     cameraSize: 70
   - levelSize: 9
     levelSpeed: 15
     cameraSize: 70
-  - levelSize: 9.5
-    levelSpeed: 15
-    cameraSize: 70
   - levelSize: 10
-    levelSpeed: 15
-    cameraSize: 70
-  - levelSize: 10.5
     levelSpeed: 15
     cameraSize: 70
   - levelSize: 11
     levelSpeed: 15
     cameraSize: 70
-  - levelSize: 11.5
+  - levelSize: 12
     levelSpeed: 15
     cameraSize: 70
+  - levelSize: 13
+    levelSpeed: 15
+    cameraSize: 70
+  - levelSize: 14
+    levelSpeed: 15
+    cameraSize: 70
+  - levelSize: 15
+    levelSpeed: 15
+    cameraSize: 70
+  - levelSize: 16
+    levelSpeed: 15
+    cameraSize: 70
+  - levelSize: 17
+    levelSpeed: 15
+    cameraSize: 70
+  - levelSize: 18
+    levelSpeed: 15
+    cameraSize: 70
+  - levelSize: 19
+    levelSpeed: 15
+    cameraSize: 70
+  - levelSize: 20
+    levelSpeed: 15
+    cameraSize: 70
+  - levelSize: 21
+    levelSpeed: 15
+    cameraSize: 70
+  diameter: 0
 --- !u!50 &1278049935593190098
 Rigidbody2D:
   serializedVersion: 5
