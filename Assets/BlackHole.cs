@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 using TMPro;
+using Ami.BroAudio;
 
 public class BlackHole : MonoBehaviour
 {
@@ -27,6 +28,10 @@ public class BlackHole : MonoBehaviour
     public float diameter;
     CircleCollider2D col;
 
+    [Header("오디오")]
+    [SerializeField]
+    private SoundID levelUp;
+
     private void Start()
     {
         col = GetComponent<CircleCollider2D>();
@@ -37,6 +42,7 @@ public class BlackHole : MonoBehaviour
     public void PlusLevel()
     {
         Level++;
+        BroAudio.Play(levelUp);
         tetrisCompo.DecreaseWallSpawnSpeed(tetrisCompo.levelDecreaseWallSpawnSpeed);
         if (Level > levelSetting.Length) return;
         Debug.Log($"{Level}레벨");

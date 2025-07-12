@@ -1,3 +1,4 @@
+using Ami.BroAudio;
 using UnityEngine;
 
 public class Planet : MonoBehaviour
@@ -32,6 +33,10 @@ public class Planet : MonoBehaviour
     [Header("현재 지름")]
     [SerializeField]
     private float diameter;
+
+    [Header("오디오")]
+    [SerializeField]
+    private SoundID eatSFX;
 
     CircleCollider2D col;
     bool isTry;
@@ -90,6 +95,7 @@ public class Planet : MonoBehaviour
             {
                 RosenBridge.Instance.EatPlanet(currentSO.planetType);
                 FindAnyObjectByType<Spawner>().planetList.Remove(gameObject);
+                BroAudio.Play(eatSFX);
                 Destroy(gameObject);
             }
         }

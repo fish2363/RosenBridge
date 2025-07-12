@@ -1,14 +1,19 @@
 using UnityEngine;
 using System.Collections;
+using Ami.BroAudio;
 
 public class PlanetTetrisBlock : MonoBehaviour
 {
+    public GameObject sinMover;
     public Rigidbody2D RbCompo { get; set; }
     public bool isPlace;
     public bool isBoom;
     public bool isBlinking = false;
 
     private SpriteRenderer sr;
+
+    [SerializeField]
+    private SoundID blockCollision;
 
     private void Awake()
     {
@@ -18,10 +23,12 @@ public class PlanetTetrisBlock : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Place") || collision.gameObject.CompareTag("Tetris"))
+        if (collision.gameObject.CompareTag("Place") || collision.gameObject.CompareTag("Tetris") || collision.gameObject.CompareTag("Putris"))
         {
             isPlace = true;
             gameObject.layer = LayerMask.NameToLayer("Putris");
+            BroAudio.Play(blockCollision);
+            gameObject.tag = "Putris";
         }
     }
 

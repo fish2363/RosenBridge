@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using Ami.BroAudio;
 
 public class Line : MonoBehaviour
 {
@@ -71,7 +72,7 @@ public class Line : MonoBehaviour
             if (hit.gameObject == gameObject) continue;
 
             GameObject obj = hit.gameObject;
-            if (obj.CompareTag("Tetris") || obj.layer == tetrisLayer)
+            if (obj.CompareTag("Tetris") || obj.CompareTag("Putris") || obj.layer == tetrisLayer)
             {
                 var block = hit.GetComponent<PlanetTetrisBlock>();
                 if (block != null)
@@ -143,6 +144,7 @@ public class Line : MonoBehaviour
         }
         Time.timeScale = 1f;
         Instantiate(tetrisCompo.EffectPrefabs, transform);
+        BroAudio.Play(tetrisCompo.lazerSound);
         tetrisCompo.LineDestroyEffect();
         GameManager.Instance.Score(tetrisCompo.boomScore);
         yield return new WaitForSecondsRealtime(0.5f);
@@ -153,6 +155,7 @@ public class Line : MonoBehaviour
             if (block.isBoom)
             {
                 currentDetectedBlocks.RemoveAt(i);
+                BroAudio.Play(tetrisCompo.destroyPlanetSound);
                 block.GetComponent<Animator>().Play("Explosion");
             }
         }
