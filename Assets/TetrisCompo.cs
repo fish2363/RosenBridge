@@ -6,6 +6,9 @@ using UnityEngine.Events;
 
 public class TetrisCompo : MonoBehaviour
 {
+    [SerializeField] private GameObject leftWall;
+    [SerializeField] private GameObject rightWall;
+
     [field: SerializeField]
     private InputReader InputReader { get; set; }
 
@@ -111,7 +114,21 @@ public class TetrisCompo : MonoBehaviour
     {
         int rand = UnityEngine.Random.Range(0, spawnPoints.Length);
         Transform spawnPoint = spawnPoints[rand];
-        PlanetTetrisBlock tetris = Instantiate(getPlanetsDictionary[type],spawnPoint.position,Quaternion.identity).GetComponent<PlanetTetrisBlock>();
+
+        Vector3 pos = spawnPoint.position;
+
+        // 벽과의 거리 계산
+        float left = leftWall.transform.position.x;
+        float right = rightWall.transform.position.x;
+        float minGap = 0.6f; // 벽과 최소 간격 (Collider 크기 기준)
+
+        if (Mathf.Abs(pos.x - left) < minGap)
+            pos.x = left + minGap;
+
+        if (Mathf.Abs(pos.x - right) < minGap)
+            pos.x = right - minGap;
+
+        PlanetTetrisBlock tetris = Instantiate(getPlanetsDictionary[type], pos, Quaternion.identity).GetComponent<PlanetTetrisBlock>();
         fieldTetris.Add(tetris);
     }
 
