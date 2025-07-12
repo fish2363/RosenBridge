@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4746391111156659571}
   - component: {fileID: 4627674637943502922}
   - component: {fileID: 7450507009424373642}
+  - component: {fileID: 7915261265491912334}
   m_Layer: 0
   m_Name: Blue
   m_TagString: Untagged
@@ -194,6 +195,21 @@ MonoBehaviour:
   moveSpeed: 10
   deSpawnDuration: 50
   isEnemy: 0
+  OnSpawnBoom:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7915261265491912334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3899752018203166243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ce003f0f282ae4f87781247162a18d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6287104167588093675
 PrefabInstance:
   m_ObjectHideFlags: 0
