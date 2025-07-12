@@ -115,6 +115,10 @@ MonoBehaviour:
   minScaleThreshold: 0.1
   minRadiusThreshold: 0.05
   diameter: 0
+  eatSFX:
+    ID: 1073741839
+    _sourceAsset: {fileID: 11400000, guid: 2904c09302c37c74ebb62a8d35cb650c, type: 2}
+    <DebugObject>k__BackingField: {fileID: 1828052611552115926}
 --- !u!58 &827792691912584116
 CircleCollider2D:
   m_ObjectHideFlags: 0

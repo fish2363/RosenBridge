@@ -298,6 +298,10 @@ MonoBehaviour:
     levelSpeed: 15
     cameraSize: 80
   diameter: 0
+  levelUp:
+    ID: 1073741842
+    _sourceAsset: {fileID: 11400000, guid: 2904c09302c37c74ebb62a8d35cb650c, type: 2}
+    <DebugObject>k__BackingField: {fileID: 9162747611229351760}
 --- !u!50 &1278049935593190098
 Rigidbody2D:
   serializedVersion: 5
