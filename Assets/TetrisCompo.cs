@@ -60,9 +60,13 @@ public class TetrisCompo : MonoBehaviour
         }
     }
 
-    public void DecreaseWallSpawnSpeed(float value) => wallSpawnSpeed -= value;
+    public void DecreaseWallSpawnSpeed(float value)
+    {
+        if(wallSpawnSpeed > 1)
+        wallSpawnSpeed -= value;
+    }
 
-    private void Update()
+        private void Update()
     {
         wallSpawnIdx += Time.deltaTime;
         currentScore = GameManager.Instance.CurrentScore;
