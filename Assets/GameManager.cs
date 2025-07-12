@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private InputReader InputReader;
     public static GameManager Instance;
     private BlackHole player;
 
@@ -22,8 +23,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private CanvasGroup gameOverUI;
 
-    private bool isInputGameOver;
     private bool isShaking;
+    private bool isDeath;
 
     [Header("¿Àµð¿À")]
     [SerializeField]
@@ -35,11 +36,32 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         player = FindAnyObjectByType<BlackHole>();
+        InputReader.OnReStartKeyPressed += ReStartScene;
+        InputReader.OnReStartKeyPressed += ReScene;
+    }
+    private void OnDisable()
+    {
+        InputReader.OnReStartKeyPressed -= ReStartScene;
+        InputReader.OnReStartKeyPressed -= ReScene;
     }
     private void Start()
     {
         scoreText.text = $"{CurrentScore}";
         BroAudio.Play(bgm);
+    }
+
+    public void ReScene()
+    {
+        if (!isDeath) return;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("GameScene");
+    }
+
+    public void ReStartScene()
+    {
+        if (!isDeath) return;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
     }
     public void Score(int score)
     {
@@ -52,24 +74,15 @@ public class GameManager : MonoBehaviour
             player.PlusLevel();
         }
     }
-    private void Update()
-    {
-        if(isInputGameOver)
-        {
-            isInputGameOver = false;
-            if (Input.GetKeyDown(KeyCode.DownArrow))
-                SceneManager.LoadScene("MainMenu");
-            if (Input.GetKeyDown(KeyCode.S))
-                SceneManager.LoadScene("GameScene");
-        }
-    }
     public void GameOver()
     {
         gameOverUI.DOFade(1f, 0.2f).OnComplete(() => {
             BroAudio.Play(gameOver);
+            BroAudio.Stop(bgm);
             gameOverUI.blocksRaycasts = true;
             gameOverUI.interactable = true;
-            isInputGameOver = true;
+            isDeath = true;
+            Time.timeScale = 0f;
         }
         );
     }

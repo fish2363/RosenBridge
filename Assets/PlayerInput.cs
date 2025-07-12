@@ -117,6 +117,24 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MainMeun"",
+                    ""type"": ""Button"",
+                    ""id"": ""23f68307-50a2-4489-ac80-70e428c71ac5"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ReStart"",
+                    ""type"": ""Button"",
+                    ""id"": ""eb41a03a-7a53-4f7e-98a9-2f9dc5bbd394"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -240,6 +258,28 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""action"": ""Tetris"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""467c97b0-022d-4946-a7ee-b0480e2bd832"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MainMeun"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a6813bba-13c4-4220-a2c8-0b76536ed895"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ReStart"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -251,6 +291,8 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_BlackHole_Move = m_BlackHole.FindAction("Move", throwIfNotFound: true);
         m_BlackHole_ESC = m_BlackHole.FindAction("ESC", throwIfNotFound: true);
         m_BlackHole_Tetris = m_BlackHole.FindAction("Tetris", throwIfNotFound: true);
+        m_BlackHole_MainMeun = m_BlackHole.FindAction("MainMeun", throwIfNotFound: true);
+        m_BlackHole_ReStart = m_BlackHole.FindAction("ReStart", throwIfNotFound: true);
     }
 
     ~@PlayerInput()
@@ -334,6 +376,8 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_BlackHole_Move;
     private readonly InputAction m_BlackHole_ESC;
     private readonly InputAction m_BlackHole_Tetris;
+    private readonly InputAction m_BlackHole_MainMeun;
+    private readonly InputAction m_BlackHole_ReStart;
     /// <summary>
     /// Provides access to input actions defined in input action map "BlackHole".
     /// </summary>
@@ -357,6 +401,14 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "BlackHole/Tetris".
         /// </summary>
         public InputAction @Tetris => m_Wrapper.m_BlackHole_Tetris;
+        /// <summary>
+        /// Provides access to the underlying input action "BlackHole/MainMeun".
+        /// </summary>
+        public InputAction @MainMeun => m_Wrapper.m_BlackHole_MainMeun;
+        /// <summary>
+        /// Provides access to the underlying input action "BlackHole/ReStart".
+        /// </summary>
+        public InputAction @ReStart => m_Wrapper.m_BlackHole_ReStart;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -392,6 +444,12 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Tetris.started += instance.OnTetris;
             @Tetris.performed += instance.OnTetris;
             @Tetris.canceled += instance.OnTetris;
+            @MainMeun.started += instance.OnMainMeun;
+            @MainMeun.performed += instance.OnMainMeun;
+            @MainMeun.canceled += instance.OnMainMeun;
+            @ReStart.started += instance.OnReStart;
+            @ReStart.performed += instance.OnReStart;
+            @ReStart.canceled += instance.OnReStart;
         }
 
         /// <summary>
@@ -412,6 +470,12 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Tetris.started -= instance.OnTetris;
             @Tetris.performed -= instance.OnTetris;
             @Tetris.canceled -= instance.OnTetris;
+            @MainMeun.started -= instance.OnMainMeun;
+            @MainMeun.performed -= instance.OnMainMeun;
+            @MainMeun.canceled -= instance.OnMainMeun;
+            @ReStart.started -= instance.OnReStart;
+            @ReStart.performed -= instance.OnReStart;
+            @ReStart.canceled -= instance.OnReStart;
         }
 
         /// <summary>
@@ -473,5 +537,19 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnTetris(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "MainMeun" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnMainMeun(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "ReStart" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnReStart(InputAction.CallbackContext context);
     }
 }
