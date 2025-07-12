@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: 398c8fb945cfde34bbb9875e9ded5ddb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7708960633332306600
+    second: marseffect_B_type__0
+  - first:
+      213: -2162604775269446623
+    second: marseffect_B_type__1
+  - first:
+      213: 2550624577210334871
+    second: marseffect_B_type__2
+  - first:
+      213: 1942718138985114070
+    second: marseffect_B_type__3
+  - first:
+      213: -232660526119614062
+    second: marseffect_B_type__4
+  - first:
+      213: -8401028289235368824
+    second: marseffect_B_type__5
+  - first:
+      213: -1294355448835987472
+    second: marseffect_B_type__6
+  - first:
+      213: 230855708167341583
+    second: marseffect_B_type__7
+  - first:
+      213: -2997186343333044241
+    second: marseffect_B_type__8
+  - first:
+      213: -4727383592646066694
+    second: marseffect_B_type__9
+  - first:
+      213: -2537451055129270282
+    second: marseffect_B_type__10
+  - first:
+      213: 7976122490984708925
+    second: marseffect_B_type__11
+  - first:
+      213: 5452465678505283992
+    second: marseffect_B_type__12
+  - first:
+      213: 6797508657223374749
+    second: marseffect_B_type__13
+  - first:
+      213: 5757928281703389329
+    second: marseffect_B_type__14
+  - first:
+      213: -5625290516756057431
+    second: marseffect_B_type__15
+  - first:
+      213: 2974529372510000346
+    second: marseffect_B_type__16
+  - first:
+      213: 43915550683808894
+    second: marseffect_B_type__17
+  - first:
+      213: 4715452248217571860
+    second: marseffect_B_type__18
+  - first:
+      213: -8095836388091378170
+    second: marseffect_B_type__19
+  - first:
+      213: 8993229343300589516
+    second: marseffect_B_type__20
+  - first:
+      213: -4686103487109221523
+    second: marseffect_B_type__21
+  - first:
+      213: -9133472522345741198
+    second: marseffect_B_type__22
+  - first:
+      213: 516374009740446819
+    second: marseffect_B_type__23
+  - first:
+      213: -360942757789066671
+    second: marseffect_B_type__24
+  - first:
+      213: 5057525567942522127
+    second: marseffect_B_type__25
+  - first:
+      213: 7877337105507023338
+    second: marseffect_B_type__26
+  - first:
+      213: -6255466121134183961
+    second: marseffect_B_type__27
+  - first:
+      213: 7868503350673685651
+    second: marseffect_B_type__28
+  - first:
+      213: -2993638713675449641
+    second: marseffect_B_type__29
+  - first:
+      213: -5540093903941329973
+    second: marseffect_B_type__30
+  - first:
+      213: -5590556188874582668
+    second: marseffect_B_type__31
+  - first:
+      213: -3888840057931952070
+    second: marseffect_B_type__32
+  - first:
+      213: -4326274932612252469
+    second: marseffect_B_type__33
+  - first:
+      213: -93666116981257003
+    second: marseffect_B_type__34
+  - first:
+      213: 9195211975646374294
+    second: marseffect_B_type__35
+  - first:
+      213: -6512090753505431705
+    second: marseffect_B_type__36
+  - first:
+      213: -3492000047646729121
+    second: marseffect_B_type__37
+  - first:
+      213: 5232700901041875853
+    second: marseffect_B_type__38
+  - first:
+      213: 7071232914233199517
+    second: marseffect_B_type__39
+  - first:
+      213: 7100041867255049136
+    second: marseffect_B_type__40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: marseffect_B_type__0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a21e392adabbfa60800000000000000
+      internalID: 7708960633332306600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marseffect_B_type__1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c40843a62ecf1e0800000000000000
+      internalID: -2162604775269446623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marseffect_B_type__2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79eb0080a83a56320800000000000000
+      internalID: 2550624577210334871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marseffect_B_type__3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d96aecbadbe5fa10800000000000000
+      internalID: 1942718138985114070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marseffect_B_type__4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2998263fb7c65ccf0800000000000000
+      internalID: -232660526119614062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marseffect_B_type__5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8844e10184d896b80800000000000000
+      internalID: -8401028289235368824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a72da79118ef5224ea2e9ed1e8edde1b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      marseffect_B_type__0: 7708960633332306600
+      marseffect_B_type__1: -2162604775269446623
+      marseffect_B_type__2: 2550624577210334871
+      marseffect_B_type__3: 1942718138985114070
+      marseffect_B_type__4: -232660526119614062
+      marseffect_B_type__5: -8401028289235368824
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
