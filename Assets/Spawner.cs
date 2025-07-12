@@ -16,7 +16,7 @@ public class Spawner : MonoBehaviour
     public int count = 10;
 
     private BoxCollider2D area;
-    private List<GameObject> planetList = new List<GameObject>();
+    public List<GameObject> planetList = new List<GameObject>();
 
     [Header("레벨당 오르는 점수")]
     public int[] levelScore;
@@ -42,7 +42,6 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator SpawnRoutine()
     {
-        yield return new WaitWhile(()=> maxPlanet <= planetList.Count);
         waitSecond = UnityEngine.Random.Range(spawnWait.min, spawnWait.max - 1);
         yield return new WaitForSeconds(waitSecond);
         Debug.Log("생성");
@@ -89,7 +88,7 @@ public class Spawner : MonoBehaviour
 
             planetList.Add(instance);
         }
-
+        yield return new WaitWhile(() => maxPlanet <= planetList.Count);
         StartCoroutine(SpawnRoutine());
     }
 

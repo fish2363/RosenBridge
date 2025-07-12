@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Line : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class Line : MonoBehaviour
     private float currentCoverage = 0f; // 👉 기즈모용 필드 추가
 
     private SpriteRenderer wallet;
+    [SerializeField] private Image prograssBar;
+
 
     private void Start()
     {
