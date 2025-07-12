@@ -5620,13 +5620,13 @@ MonoBehaviour:
     cameraSize: 70
   - levelSize: 8
     levelSpeed: 15
-    cameraSize: 70
+    cameraSize: 80
   - levelSize: 9
     levelSpeed: 15
-    cameraSize: 70
+    cameraSize: 80
   - levelSize: 10
     levelSpeed: 15
-    cameraSize: 70
+    cameraSize: 80
   - levelSize: 11
     levelSpeed: 15
     cameraSize: 80
@@ -5635,31 +5635,31 @@ MonoBehaviour:
     cameraSize: 80
   - levelSize: 13
     levelSpeed: 15
-    cameraSize: 80
+    cameraSize: 90
   - levelSize: 14
     levelSpeed: 15
-    cameraSize: 80
+    cameraSize: 90
   - levelSize: 15
     levelSpeed: 15
-    cameraSize: 80
+    cameraSize: 90
   - levelSize: 16
     levelSpeed: 15
-    cameraSize: 80
+    cameraSize: 90
   - levelSize: 17
     levelSpeed: 15
-    cameraSize: 80
+    cameraSize: 90
   - levelSize: 18
     levelSpeed: 15
-    cameraSize: 80
+    cameraSize: 100
   - levelSize: 19
     levelSpeed: 15
-    cameraSize: 80
+    cameraSize: 100
   - levelSize: 20
     levelSpeed: 15
-    cameraSize: 80
+    cameraSize: 100
   - levelSize: 21
     levelSpeed: 15
-    cameraSize: 80
+    cameraSize: 100
   diameter: 0
   levelUp:
     ID: 1073741842
