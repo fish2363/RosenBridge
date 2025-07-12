@@ -599,6 +599,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d489e176666e3145919a310e962fa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leftWall: {fileID: 0}
+  rightWall: {fileID: 0}
   <InputReader>k__BackingField: {fileID: 11400000, guid: f6f81044fc533c34fbad0e329da0fa30, type: 2}
   planetPrefabs:
   - {fileID: 6430900867280666202, guid: 049c59c7aec4cea4e9841dbed520818c, type: 3}
@@ -630,11 +632,11 @@ MonoBehaviour:
   - {fileID: 1004902387754058296}
   - {fileID: 23340447575894579}
   <MoveSpeed>k__BackingField: 5
-  <RotateSpeed>k__BackingField: 150
-  wallSpawnSpeed: 12
+  <RotateSpeed>k__BackingField: 200
+  wallSpawnSpeed: 10
   boomScore: 500
   EffectPrefabs: {fileID: 6775607032007840371, guid: 2fd9eb0109d95fa468cadf5320d05108, type: 3}
-  levelDecreaseWallSpawnSpeed: 0.3
+  levelDecreaseWallSpawnSpeed: 1
   OnLockEvent:
     m_PersistentCalls:
       m_Calls:
