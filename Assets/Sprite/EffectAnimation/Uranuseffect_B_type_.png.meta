@@ -1,130 +1,130 @@
 fileFormatVersion: 2
-guid: 87aad485de58b4248827e9563883c180
+guid: b1d4a915aa269b64aa19ab2b7a87949e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5896307860351487180
-    second: mercuryeffect_B_type__0
+      213: -1381205847354165883
+    second: Uranuseffect_B_type__0
   - first:
-      213: -2991745835109787416
-    second: mercuryeffect_B_type__1
+      213: 5766606013304195296
+    second: Uranuseffect_B_type__1
   - first:
-      213: 1271048983306483487
-    second: mercuryeffect_B_type__2
+      213: -7306544887870831669
+    second: Uranuseffect_B_type__2
   - first:
-      213: -2348774691196365148
-    second: mercuryeffect_B_type__3
+      213: -2759356956359796150
+    second: Uranuseffect_B_type__3
   - first:
-      213: -3218385715302490277
-    second: mercuryeffect_B_type__4
+      213: -5533366324539251101
+    second: Uranuseffect_B_type__4
   - first:
-      213: -2748832790747451185
-    second: mercuryeffect_B_type__5
+      213: 5128041991480609766
+    second: Uranuseffect_B_type__5
   - first:
-      213: -2065369085238705412
-    second: mercuryeffect_B_type__6
+      213: 7816914340039096300
+    second: Uranuseffect_B_type__6
   - first:
-      213: -7320592749247389886
-    second: mercuryeffect_B_type__7
+      213: -4426476344899426959
+    second: Uranuseffect_B_type__7
   - first:
-      213: -6999402976920799162
-    second: mercuryeffect_B_type__8
+      213: 7422145063440260268
+    second: Uranuseffect_B_type__8
   - first:
-      213: 8844206490805820167
-    second: mercuryeffect_B_type__9
+      213: 6408372971677950319
+    second: Uranuseffect_B_type__9
   - first:
-      213: 1589230931750801806
-    second: mercuryeffect_B_type__10
+      213: -1413856378837391168
+    second: Uranuseffect_B_type__10
   - first:
-      213: -7904780887433668737
-    second: mercuryeffect_B_type__11
+      213: 6385990498106391578
+    second: Uranuseffect_B_type__11
   - first:
-      213: 4162421693774123777
-    second: mercuryeffect_B_type__12
+      213: -2507853672983975269
+    second: Uranuseffect_B_type__12
   - first:
-      213: 808753472934180033
-    second: mercuryeffect_B_type__13
+      213: 4240677879887169988
+    second: Uranuseffect_B_type__13
   - first:
-      213: -7919911875271024653
-    second: mercuryeffect_B_type__14
+      213: -3210490334078219351
+    second: Uranuseffect_B_type__14
   - first:
-      213: -3398594678486629410
-    second: mercuryeffect_B_type__15
+      213: -4989647172429491185
+    second: Uranuseffect_B_type__15
   - first:
-      213: 1016190493603924999
-    second: mercuryeffect_B_type__16
+      213: 7722409136349620051
+    second: Uranuseffect_B_type__16
   - first:
-      213: 6650065631795005363
-    second: mercuryeffect_B_type__17
+      213: -8691545464379896177
+    second: Uranuseffect_B_type__17
   - first:
-      213: -5216106536897918068
-    second: mercuryeffect_B_type__18
+      213: 8933550637610274084
+    second: Uranuseffect_B_type__18
   - first:
-      213: 7558643644525295935
-    second: mercuryeffect_B_type__19
+      213: 4642671266564163639
+    second: Uranuseffect_B_type__19
   - first:
-      213: 9065875680161905420
-    second: mercuryeffect_B_type__20
+      213: 6461869528778314154
+    second: Uranuseffect_B_type__20
   - first:
-      213: 7299095116067124225
-    second: mercuryeffect_B_type__21
+      213: -2331758917555556889
+    second: Uranuseffect_B_type__21
   - first:
-      213: -2356968637841585560
-    second: mercuryeffect_B_type__22
+      213: 5970801089421335966
+    second: Uranuseffect_B_type__22
   - first:
-      213: 1967806598272053860
-    second: mercuryeffect_B_type__23
+      213: -1811962562870963446
+    second: Uranuseffect_B_type__23
   - first:
-      213: 1360941658048886432
-    second: mercuryeffect_B_type__24
+      213: -2625789551824142490
+    second: Uranuseffect_B_type__24
   - first:
-      213: 7748017220041395604
-    second: mercuryeffect_B_type__25
+      213: 4577244083338759122
+    second: Uranuseffect_B_type__25
   - first:
-      213: -9146922210838346014
-    second: mercuryeffect_B_type__26
+      213: 4436670266898021320
+    second: Uranuseffect_B_type__26
   - first:
-      213: 8832896635884350027
-    second: mercuryeffect_B_type__27
+      213: 7468740610812221644
+    second: Uranuseffect_B_type__27
   - first:
-      213: 3071131719079987113
-    second: mercuryeffect_B_type__28
+      213: -2947594898586289386
+    second: Uranuseffect_B_type__28
   - first:
-      213: 4937860592713505682
-    second: mercuryeffect_B_type__29
+      213: 4855095531433098316
+    second: Uranuseffect_B_type__29
   - first:
-      213: -7007099226996266192
-    second: mercuryeffect_B_type__30
+      213: -6931549003196718955
+    second: Uranuseffect_B_type__30
   - first:
-      213: 1906004001073154745
-    second: mercuryeffect_B_type__31
+      213: 486969384356313882
+    second: Uranuseffect_B_type__31
   - first:
-      213: 6418155325673458074
-    second: mercuryeffect_B_type__32
+      213: 4982404018271627040
+    second: Uranuseffect_B_type__32
   - first:
-      213: -8949037844280066198
-    second: mercuryeffect_B_type__33
+      213: -3064062371822517652
+    second: Uranuseffect_B_type__33
   - first:
-      213: -6316572333844885559
-    second: mercuryeffect_B_type__34
+      213: -7516646510613019659
+    second: Uranuseffect_B_type__34
   - first:
-      213: -2265714196461466227
-    second: mercuryeffect_B_type__35
+      213: -9057967789125375770
+    second: Uranuseffect_B_type__35
   - first:
-      213: -7225350755987599244
-    second: mercuryeffect_B_type__36
+      213: -5728859844815328627
+    second: Uranuseffect_B_type__36
   - first:
-      213: 5255255348589429498
-    second: mercuryeffect_B_type__37
+      213: 7640370346964338585
+    second: Uranuseffect_B_type__37
   - first:
-      213: 111871981979399286
-    second: mercuryeffect_B_type__38
+      213: -3621553763674001025
+    second: Uranuseffect_B_type__38
   - first:
-      213: 6179079042977887097
-    second: mercuryeffect_B_type__39
+      213: 568568978998525133
+    second: Uranuseffect_B_type__39
   - first:
-      213: -931613943977465930
-    second: mercuryeffect_B_type__40
+      213: 4802266976497594077
+    second: Uranuseffect_B_type__40
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -171,7 +171,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -220,7 +220,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mercuryeffect_B_type__0
+      name: Uranuseffect_B_type__0
       rect:
         serializedVersion: 2
         x: 0
@@ -235,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 433f761bd3b1c2ea0800000000000000
-      internalID: -5896307860351487180
+      spriteID: 58533ca8998f4dce0800000000000000
+      internalID: -1381205847354165883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mercuryeffect_B_type__1
+      name: Uranuseffect_B_type__1
       rect:
         serializedVersion: 2
         x: 100
@@ -257,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e8d600930f2b76d0800000000000000
-      internalID: -2991745835109787416
+      spriteID: 0e8c0a6cd99170050800000000000000
+      internalID: 5766606013304195296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mercuryeffect_B_type__2
+      name: Uranuseffect_B_type__2
       rect:
         serializedVersion: 2
         x: 200
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f17ba16e05ca3a110800000000000000
-      internalID: 1271048983306483487
+      spriteID: bc3430fd220f99a90800000000000000
+      internalID: -7306544887870831669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mercuryeffect_B_type__3
+      name: Uranuseffect_B_type__3
       rect:
         serializedVersion: 2
         x: 300
@@ -301,14 +301,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a610d9dcd9776fd0800000000000000
-      internalID: -2348774691196365148
+      spriteID: a4adba7c77bc4b9d0800000000000000
+      internalID: -2759356956359796150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mercuryeffect_B_type__4
+      name: Uranuseffect_B_type__4
       rect:
         serializedVersion: 2
         x: 400
@@ -323,14 +323,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5f14316e3ff553d0800000000000000
-      internalID: -3218385715302490277
+      spriteID: 366aab515a88533b0800000000000000
+      internalID: -5533366324539251101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mercuryeffect_B_type__5
+      name: Uranuseffect_B_type__5
       rect:
         serializedVersion: 2
         x: 500
@@ -345,8 +345,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc07d88042f2ad9d0800000000000000
-      internalID: -2748832790747451185
+      spriteID: 6eb0d7f85077a2740800000000000000
+      internalID: 5128041991480609766
       vertices: []
       indices: 
       edges: []
@@ -355,7 +355,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ffe5477dfac94cb4b8af95998175cc07
+    spriteID: 52fd3d2ee863dd440a60147fcf707d1b
     internalID: 0
     vertices: []
     indices: 
@@ -365,12 +365,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mercuryeffect_B_type__0: -5896307860351487180
-      mercuryeffect_B_type__1: -2991745835109787416
-      mercuryeffect_B_type__2: 1271048983306483487
-      mercuryeffect_B_type__3: -2348774691196365148
-      mercuryeffect_B_type__4: -3218385715302490277
-      mercuryeffect_B_type__5: -2748832790747451185
+      Uranuseffect_B_type__0: -1381205847354165883
+      Uranuseffect_B_type__1: 5766606013304195296
+      Uranuseffect_B_type__2: -7306544887870831669
+      Uranuseffect_B_type__3: -2759356956359796150
+      Uranuseffect_B_type__4: -5533366324539251101
+      Uranuseffect_B_type__5: 5128041991480609766
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

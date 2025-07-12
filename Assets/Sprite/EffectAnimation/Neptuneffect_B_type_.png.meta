@@ -1,130 +1,130 @@
 fileFormatVersion: 2
-guid: 1d0a8aa860c37d448a7869b7d8a3a241
+guid: b2f60f493f9174e4f9a80856b056f72b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1863584411464064405
-    second: Venuseffect_B_type__0
+      213: 2286868462754436370
+    second: Neptuneffect_B_type__0
   - first:
-      213: 5947781804715990816
-    second: Venuseffect_B_type__1
+      213: -7157447381011507245
+    second: Neptuneffect_B_type__1
   - first:
-      213: -8216716806701800065
-    second: Venuseffect_B_type__2
+      213: 2824189903816092952
+    second: Neptuneffect_B_type__2
   - first:
-      213: 1131814667094916709
-    second: Venuseffect_B_type__3
+      213: -7359378178423310666
+    second: Neptuneffect_B_type__3
   - first:
-      213: -3198243689642680869
-    second: Venuseffect_B_type__4
+      213: 5400884690680870472
+    second: Neptuneffect_B_type__4
   - first:
-      213: 2230124986687461712
-    second: Venuseffect_B_type__5
+      213: 8587276728835150649
+    second: Neptuneffect_B_type__5
   - first:
-      213: 7829278796058347523
-    second: Venuseffect_B_type__6
+      213: 7483024617785047904
+    second: Neptuneffect_B_type__6
   - first:
-      213: 4012056262645359418
-    second: Venuseffect_B_type__7
+      213: 8819810430928404371
+    second: Neptuneffect_B_type__7
   - first:
-      213: 3074713122131306542
-    second: Venuseffect_B_type__8
+      213: 4816398179550281003
+    second: Neptuneffect_B_type__8
   - first:
-      213: 6513848783705687356
-    second: Venuseffect_B_type__9
+      213: 6528214287714589434
+    second: Neptuneffect_B_type__9
   - first:
-      213: 507064065271364908
-    second: Venuseffect_B_type__10
+      213: -6695386420243201134
+    second: Neptuneffect_B_type__10
   - first:
-      213: 52471956843704240
-    second: Venuseffect_B_type__11
+      213: 7976892356033760269
+    second: Neptuneffect_B_type__11
   - first:
-      213: 3768682048802336288
-    second: Venuseffect_B_type__12
+      213: -6268978363563010533
+    second: Neptuneffect_B_type__12
   - first:
-      213: 8185386090247624945
-    second: Venuseffect_B_type__13
+      213: 8506085182427900904
+    second: Neptuneffect_B_type__13
   - first:
-      213: -2098421117145123285
-    second: Venuseffect_B_type__14
+      213: 6553200136535044810
+    second: Neptuneffect_B_type__14
   - first:
-      213: 4169623607426295026
-    second: Venuseffect_B_type__15
+      213: 2349270097813740602
+    second: Neptuneffect_B_type__15
   - first:
-      213: 4327994464974424372
-    second: Venuseffect_B_type__16
+      213: 9012247176978318350
+    second: Neptuneffect_B_type__16
   - first:
-      213: 1410620025977978603
-    second: Venuseffect_B_type__17
+      213: 1538384020987084665
+    second: Neptuneffect_B_type__17
   - first:
-      213: -7321319100841238078
-    second: Venuseffect_B_type__18
+      213: 6824182885901666971
+    second: Neptuneffect_B_type__18
   - first:
-      213: -4340410264887303966
-    second: Venuseffect_B_type__19
+      213: 1252451649958543771
+    second: Neptuneffect_B_type__19
   - first:
-      213: -2617692152244473880
-    second: Venuseffect_B_type__20
+      213: 2545289805897417519
+    second: Neptuneffect_B_type__20
   - first:
-      213: 8969747941218223332
-    second: Venuseffect_B_type__21
+      213: -2212749021802749467
+    second: Neptuneffect_B_type__21
   - first:
-      213: 1525712223939031225
-    second: Venuseffect_B_type__22
+      213: 1951402888782521761
+    second: Neptuneffect_B_type__22
   - first:
-      213: -3687307409275588270
-    second: Venuseffect_B_type__23
+      213: 1479836554352763294
+    second: Neptuneffect_B_type__23
   - first:
-      213: -6234740128404241362
-    second: Venuseffect_B_type__24
+      213: 2163933168386553540
+    second: Neptuneffect_B_type__24
   - first:
-      213: 4911062504894092125
-    second: Venuseffect_B_type__25
+      213: -4301017974124512609
+    second: Neptuneffect_B_type__25
   - first:
-      213: -1068654997214645616
-    second: Venuseffect_B_type__26
+      213: -5600025503159771922
+    second: Neptuneffect_B_type__26
   - first:
-      213: -2894185422261257783
-    second: Venuseffect_B_type__27
+      213: -2900740398417332979
+    second: Neptuneffect_B_type__27
   - first:
-      213: 6616277368176191253
-    second: Venuseffect_B_type__28
+      213: 1694868826571454913
+    second: Neptuneffect_B_type__28
   - first:
-      213: 5654368213007269400
-    second: Venuseffect_B_type__29
+      213: -6291559502730666208
+    second: Neptuneffect_B_type__29
   - first:
-      213: 352673641574896062
-    second: Venuseffect_B_type__30
+      213: 3125111087199013140
+    second: Neptuneffect_B_type__30
   - first:
-      213: -8981654664622304483
-    second: Venuseffect_B_type__31
+      213: -6849163329600897289
+    second: Neptuneffect_B_type__31
   - first:
-      213: 2282540242401581436
-    second: Venuseffect_B_type__32
+      213: -4912784603766942801
+    second: Neptuneffect_B_type__32
   - first:
-      213: -8883620607383853243
-    second: Venuseffect_B_type__33
+      213: 6282830347223087010
+    second: Neptuneffect_B_type__33
   - first:
-      213: 3521929943666568828
-    second: Venuseffect_B_type__34
+      213: 2310530584913395826
+    second: Neptuneffect_B_type__34
   - first:
-      213: -6140667081721251075
-    second: Venuseffect_B_type__35
+      213: -5174030465176674659
+    second: Neptuneffect_B_type__35
   - first:
-      213: -8000568260427325650
-    second: Venuseffect_B_type__36
+      213: -4761521784050205132
+    second: Neptuneffect_B_type__36
   - first:
-      213: 2951528309448338804
-    second: Venuseffect_B_type__37
+      213: -7867420924691956564
+    second: Neptuneffect_B_type__37
   - first:
-      213: 5961220235099569900
-    second: Venuseffect_B_type__38
+      213: 4266546282287765220
+    second: Neptuneffect_B_type__38
   - first:
-      213: -8417958515660347927
-    second: Venuseffect_B_type__39
+      213: -4710203160143884420
+    second: Neptuneffect_B_type__39
   - first:
-      213: 1686593877827931062
-    second: Venuseffect_B_type__40
+      213: -1912443707553005273
+    second: Neptuneffect_B_type__40
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -171,7 +171,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -220,7 +220,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Venuseffect_B_type__0
+      name: Neptuneffect_B_type__0
       rect:
         serializedVersion: 2
         x: 0
@@ -235,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59d55460628ccd910800000000000000
-      internalID: 1863584411464064405
+      spriteID: 215958220c69cbf10800000000000000
+      internalID: 2286868462754436370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Venuseffect_B_type__1
+      name: Neptuneffect_B_type__1
       rect:
         serializedVersion: 2
         x: 100
@@ -257,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02fd0a7e904ca8250800000000000000
-      internalID: 5947781804715990816
+      spriteID: 3d7524c5783abac90800000000000000
+      internalID: -7157447381011507245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Venuseffect_B_type__2
+      name: Neptuneffect_B_type__2
       rect:
         serializedVersion: 2
         x: 200
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f75ae8c299b58fd80800000000000000
-      internalID: -8216716806701800065
+      spriteID: 81de33b11c9813720800000000000000
+      internalID: 2824189903816092952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Venuseffect_B_type__3
+      name: Neptuneffect_B_type__3
       rect:
         serializedVersion: 2
         x: 300
@@ -301,14 +301,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 56ef4cf617305bf00800000000000000
-      internalID: 1131814667094916709
+      spriteID: 6b63153d98c3ed990800000000000000
+      internalID: -7359378178423310666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Venuseffect_B_type__4
+      name: Neptuneffect_B_type__4
       rect:
         serializedVersion: 2
         x: 400
@@ -323,14 +323,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bdd96bd2f4e8d93d0800000000000000
-      internalID: -3198243689642680869
+      spriteID: 846f0e4d20cc3fa40800000000000000
+      internalID: 5400884690680870472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Venuseffect_B_type__5
+      name: Neptuneffect_B_type__5
       rect:
         serializedVersion: 2
         x: 500
@@ -345,8 +345,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0599a341cdef2fe10800000000000000
-      internalID: 2230124986687461712
+      spriteID: 933923200b22c2770800000000000000
+      internalID: 8587276728835150649
       vertices: []
       indices: 
       edges: []
@@ -355,7 +355,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2d23567dc7162584fb0062ba18b47049
+    spriteID: 72c4c2c53ea6a6043a22925532654f93
     internalID: 0
     vertices: []
     indices: 
@@ -365,12 +365,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Venuseffect_B_type__0: 1863584411464064405
-      Venuseffect_B_type__1: 5947781804715990816
-      Venuseffect_B_type__2: -8216716806701800065
-      Venuseffect_B_type__3: 1131814667094916709
-      Venuseffect_B_type__4: -3198243689642680869
-      Venuseffect_B_type__5: 2230124986687461712
+      Neptuneffect_B_type__0: 2286868462754436370
+      Neptuneffect_B_type__1: -7157447381011507245
+      Neptuneffect_B_type__2: 2824189903816092952
+      Neptuneffect_B_type__3: -7359378178423310666
+      Neptuneffect_B_type__4: 5400884690680870472
+      Neptuneffect_B_type__5: 8587276728835150649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

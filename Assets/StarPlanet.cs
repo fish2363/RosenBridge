@@ -14,6 +14,8 @@ public class StarPlanet : MonoBehaviour
     public float rotateSpeed = 180f;      // 도/초
     public float shrinkSpeed = 0.5f;      // 축소 속도
     public float pullRate = 0.97f;        // 감기 속도 (0.95~0.99)
+    public float pullDuration = 0.97f;        // 감기 속도 (0.95~0.99)
+    public float magnetisRotateSpeed = 180f;      // 도/초
 
     [Header("파괴 조건")]
     public float minScaleThreshold = 0.1f;   // 평균 스케일 기준
@@ -23,6 +25,11 @@ public class StarPlanet : MonoBehaviour
 
     private float currentRadius;
     private float currentAngle;
+
+    private void Start()
+    {
+        pullDuration = Random.Range(70,200);
+    }
 
     public void StartBlackhole()
     {
@@ -43,9 +50,10 @@ public class StarPlanet : MonoBehaviour
         // 1. 회전 (라디안 단위로 누적)
         float angleDelta = rotateSpeed * Mathf.Deg2Rad * Time.deltaTime;
         currentAngle += angleDelta;
+        transform.Rotate(0, 0, magnetisRotateSpeed * Time.deltaTime);
 
         // 2. 중심으로 감기 (점점 반지름 축소)
-        currentRadius *= Mathf.Pow(pullRate, Time.deltaTime * 60f); // 프레임 보정
+        currentRadius *= Mathf.Pow(pullRate, Time.deltaTime * pullDuration); // 프레임 보정
 
         // 3. 새로운 위치 계산
         Vector3 offset = new Vector3(Mathf.Cos(currentAngle), Mathf.Sin(currentAngle), 0f) * currentRadius;
@@ -64,7 +72,7 @@ public class StarPlanet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !isAbsorbing)
         {
             blackholeCenter = collision.gameObject.transform;
             GameManager.Instance.Score(score);

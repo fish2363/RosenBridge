@@ -36,6 +36,8 @@ public class TetrisCompo : MonoBehaviour
     [SerializeField] private float wallSpawnSpeed;
     private float wallSpawnIdx;
 
+    [Header("폭발 이펙트")]
+    public GameObject EffectPrefabs;
     [Header("레벨당 생성 속도 감소")]
     public float levelDecreaseWallSpawnSpeed =0.2f;
 

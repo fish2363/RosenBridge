@@ -121,6 +121,7 @@ public class Line : MonoBehaviour
     {
         tetrisCompo.DestroyTetris();
         yield return new WaitForSeconds(0.7f);
+        Instantiate(tetrisCompo.EffectPrefabs,transform);
         tetrisCompo.LineDestroyEffect();
         for (int i = currentDetectedBlocks.Count - 1; i >= 0; i--)
         {
@@ -128,7 +129,7 @@ public class Line : MonoBehaviour
             if (block.isBoom)
             {
                 currentDetectedBlocks.RemoveAt(i);
-                Destroy(block.gameObject);
+                block.GetComponent<Animator>().Play("Explosion");
             }
         }
     }

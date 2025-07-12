@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eatSOs:
   - {fileID: 11400000, guid: cec68174219a09f43a8ea534e33fe6d4, type: 2}
+  - {fileID: 11400000, guid: 3c9376395de6e4c48ac43d51fed118f4, type: 2}
+  - {fileID: 11400000, guid: 2fc3b87f2b79d1849a554856809d0bf9, type: 2}
+  - {fileID: 11400000, guid: 9641cb44eec278f44969a7d4126131a0, type: 2}

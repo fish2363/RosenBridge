@@ -41,7 +41,8 @@ public class StarSpawner : MonoBehaviour
 
 
             // 해당 등급에 맞는 SO 선택
-            spawnSO = EatSOList.eatSOs[0];
+            int randStarPrefabs = UnityEngine.Random.Range(0, EatSOList.eatSOs.Count);
+            spawnSO = EatSOList.eatSOs[randStarPrefabs];
 
             // 생성 및 설정
             GameObject instance = Instantiate(spawnSO.planet, spawnPos, Quaternion.identity);

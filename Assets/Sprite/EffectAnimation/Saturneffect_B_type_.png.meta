@@ -1,130 +1,130 @@
 fileFormatVersion: 2
-guid: b1d4a915aa269b64aa19ab2b7a87949e
+guid: 4242516cdb0a35a4ab54fd4e8c5372c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1381205847354165883
-    second: Uranuseffect_B_type__0
+      213: 6112344236177818148
+    second: Saturneffect_B_type__0
   - first:
-      213: 5766606013304195296
-    second: Uranuseffect_B_type__1
+      213: -7070078229038722078
+    second: Saturneffect_B_type__1
   - first:
-      213: -7306544887870831669
-    second: Uranuseffect_B_type__2
+      213: 8275025030839910842
+    second: Saturneffect_B_type__2
   - first:
-      213: -2759356956359796150
-    second: Uranuseffect_B_type__3
+      213: 8530735835849192600
+    second: Saturneffect_B_type__3
   - first:
-      213: -5533366324539251101
-    second: Uranuseffect_B_type__4
+      213: -9167821274105535557
+    second: Saturneffect_B_type__4
   - first:
-      213: 5128041991480609766
-    second: Uranuseffect_B_type__5
+      213: 2265754528513127164
+    second: Saturneffect_B_type__5
   - first:
-      213: 7816914340039096300
-    second: Uranuseffect_B_type__6
+      213: 6728937021624458825
+    second: Saturneffect_B_type__6
   - first:
-      213: -4426476344899426959
-    second: Uranuseffect_B_type__7
+      213: 6012310051142180226
+    second: Saturneffect_B_type__7
   - first:
-      213: 7422145063440260268
-    second: Uranuseffect_B_type__8
+      213: 1002854001675982645
+    second: Saturneffect_B_type__8
   - first:
-      213: 6408372971677950319
-    second: Uranuseffect_B_type__9
+      213: -6612520379624839133
+    second: Saturneffect_B_type__9
   - first:
-      213: -1413856378837391168
-    second: Uranuseffect_B_type__10
+      213: -5020773448974458936
+    second: Saturneffect_B_type__10
   - first:
-      213: 6385990498106391578
-    second: Uranuseffect_B_type__11
+      213: -5341695852338118818
+    second: Saturneffect_B_type__11
   - first:
-      213: -2507853672983975269
-    second: Uranuseffect_B_type__12
+      213: 3823565657871939859
+    second: Saturneffect_B_type__12
   - first:
-      213: 4240677879887169988
-    second: Uranuseffect_B_type__13
+      213: -3060410097576849369
+    second: Saturneffect_B_type__13
   - first:
-      213: -3210490334078219351
-    second: Uranuseffect_B_type__14
+      213: -1146957830883043538
+    second: Saturneffect_B_type__14
   - first:
-      213: -4989647172429491185
-    second: Uranuseffect_B_type__15
+      213: -2120068194573131933
+    second: Saturneffect_B_type__15
   - first:
-      213: 7722409136349620051
-    second: Uranuseffect_B_type__16
+      213: -5990510609455336055
+    second: Saturneffect_B_type__16
   - first:
-      213: -8691545464379896177
-    second: Uranuseffect_B_type__17
+      213: 9073193961417682058
+    second: Saturneffect_B_type__17
   - first:
-      213: 8933550637610274084
-    second: Uranuseffect_B_type__18
+      213: 6633932210801340248
+    second: Saturneffect_B_type__18
   - first:
-      213: 4642671266564163639
-    second: Uranuseffect_B_type__19
+      213: -8932396924123927548
+    second: Saturneffect_B_type__19
   - first:
-      213: 6461869528778314154
-    second: Uranuseffect_B_type__20
+      213: 1580785948965770886
+    second: Saturneffect_B_type__20
   - first:
-      213: -2331758917555556889
-    second: Uranuseffect_B_type__21
+      213: -1537370049052233961
+    second: Saturneffect_B_type__21
   - first:
-      213: 5970801089421335966
-    second: Uranuseffect_B_type__22
+      213: 1432862385263820815
+    second: Saturneffect_B_type__22
   - first:
-      213: -1811962562870963446
-    second: Uranuseffect_B_type__23
+      213: -6447293822004230975
+    second: Saturneffect_B_type__23
   - first:
-      213: -2625789551824142490
-    second: Uranuseffect_B_type__24
+      213: 2201843339521837310
+    second: Saturneffect_B_type__24
   - first:
-      213: 4577244083338759122
-    second: Uranuseffect_B_type__25
+      213: -5602900347642980953
+    second: Saturneffect_B_type__25
   - first:
-      213: 4436670266898021320
-    second: Uranuseffect_B_type__26
+      213: -4621087226069305830
+    second: Saturneffect_B_type__26
   - first:
-      213: 7468740610812221644
-    second: Uranuseffect_B_type__27
+      213: 3884233868417440245
+    second: Saturneffect_B_type__27
   - first:
-      213: -2947594898586289386
-    second: Uranuseffect_B_type__28
+      213: 7334998455942711929
+    second: Saturneffect_B_type__28
   - first:
-      213: 4855095531433098316
-    second: Uranuseffect_B_type__29
+      213: -2819022683970207078
+    second: Saturneffect_B_type__29
   - first:
-      213: -6931549003196718955
-    second: Uranuseffect_B_type__30
+      213: 4700858599779037230
+    second: Saturneffect_B_type__30
   - first:
-      213: 486969384356313882
-    second: Uranuseffect_B_type__31
+      213: -3026126241812697293
+    second: Saturneffect_B_type__31
   - first:
-      213: 4982404018271627040
-    second: Uranuseffect_B_type__32
+      213: -7374850844062778129
+    second: Saturneffect_B_type__32
   - first:
-      213: -3064062371822517652
-    second: Uranuseffect_B_type__33
+      213: -7702159606328068695
+    second: Saturneffect_B_type__33
   - first:
-      213: -7516646510613019659
-    second: Uranuseffect_B_type__34
+      213: 4757658143048872644
+    second: Saturneffect_B_type__34
   - first:
-      213: -9057967789125375770
-    second: Uranuseffect_B_type__35
+      213: 7073457603673616070
+    second: Saturneffect_B_type__35
   - first:
-      213: -5728859844815328627
-    second: Uranuseffect_B_type__36
+      213: -408447534203201390
+    second: Saturneffect_B_type__36
   - first:
-      213: 7640370346964338585
-    second: Uranuseffect_B_type__37
+      213: -7527996919340885434
+    second: Saturneffect_B_type__37
   - first:
-      213: -3621553763674001025
-    second: Uranuseffect_B_type__38
+      213: -820962499175528816
+    second: Saturneffect_B_type__38
   - first:
-      213: 568568978998525133
-    second: Uranuseffect_B_type__39
+      213: -104551172539540215
+    second: Saturneffect_B_type__39
   - first:
-      213: 4802266976497594077
-    second: Uranuseffect_B_type__40
+      213: -2429076610425101714
+    second: Saturneffect_B_type__40
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -171,7 +171,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -220,7 +220,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Uranuseffect_B_type__0
+      name: Saturneffect_B_type__0
       rect:
         serializedVersion: 2
         x: 0
@@ -235,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58533ca8998f4dce0800000000000000
-      internalID: -1381205847354165883
+      spriteID: 422094eb2b863d450800000000000000
+      internalID: 6112344236177818148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Uranuseffect_B_type__1
+      name: Saturneffect_B_type__1
       rect:
         serializedVersion: 2
         x: 100
@@ -257,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e8c0a6cd99170050800000000000000
-      internalID: 5766606013304195296
+      spriteID: 2e39cef3f4902ed90800000000000000
+      internalID: -7070078229038722078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Uranuseffect_B_type__2
+      name: Saturneffect_B_type__2
       rect:
         serializedVersion: 2
         x: 200
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc3430fd220f99a90800000000000000
-      internalID: -7306544887870831669
+      spriteID: ab1cdae2c6bc6d270800000000000000
+      internalID: 8275025030839910842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Uranuseffect_B_type__3
+      name: Saturneffect_B_type__3
       rect:
         serializedVersion: 2
         x: 300
@@ -301,14 +301,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4adba7c77bc4b9d0800000000000000
-      internalID: -2759356956359796150
+      spriteID: 8947c708b03436670800000000000000
+      internalID: 8530735835849192600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Uranuseffect_B_type__4
+      name: Saturneffect_B_type__4
       rect:
         serializedVersion: 2
         x: 400
@@ -323,14 +323,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 366aab515a88533b0800000000000000
-      internalID: -5533366324539251101
+      spriteID: bb3aba8df1b55c080800000000000000
+      internalID: -9167821274105535557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Uranuseffect_B_type__5
+      name: Saturneffect_B_type__5
       rect:
         serializedVersion: 2
         x: 500
@@ -345,8 +345,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6eb0d7f85077a2740800000000000000
-      internalID: 5128041991480609766
+      spriteID: cf2f14c3db3917f10800000000000000
+      internalID: 2265754528513127164
       vertices: []
       indices: 
       edges: []
@@ -355,7 +355,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 52fd3d2ee863dd440a60147fcf707d1b
+    spriteID: e08e9ab2e41162a40b85e48f0c1fd155
     internalID: 0
     vertices: []
     indices: 
@@ -365,12 +365,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Uranuseffect_B_type__0: -1381205847354165883
-      Uranuseffect_B_type__1: 5766606013304195296
-      Uranuseffect_B_type__2: -7306544887870831669
-      Uranuseffect_B_type__3: -2759356956359796150
-      Uranuseffect_B_type__4: -5533366324539251101
-      Uranuseffect_B_type__5: 5128041991480609766
+      Saturneffect_B_type__0: 6112344236177818148
+      Saturneffect_B_type__1: -7070078229038722078
+      Saturneffect_B_type__2: 8275025030839910842
+      Saturneffect_B_type__3: 8530735835849192600
+      Saturneffect_B_type__4: -9167821274105535557
+      Saturneffect_B_type__5: 2265754528513127164
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

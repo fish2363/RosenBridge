@@ -4,7 +4,6 @@ using TMPro;
 
 public class BlackHole : MonoBehaviour
 {
-    [SerializeField]
     private TetrisCompo tetrisCompo;
 
     [SerializeField]

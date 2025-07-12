@@ -16,7 +16,8 @@ public class Planet : MonoBehaviour
     public float rotateSpeed = 180f;      // 도/초
     public float shrinkSpeed = 0.5f;      // 축소 애니메이션 속도
     public float magneticForceSizeSpeed = 0.1f;      //자력 축소 속도
-    public float magnetismSpeed = 0.1f;      // 자력이 끌어당기는 속도
+    public float magnetisRotateSpeed = 180f;      // 도/초
+    public float magnetismSpeed = 0.3f;      // 자력이 끌어당기는 속도
     public float pullRate = 0.97f;        // 감기 속도 (0.95~0.99)
 
     [Header("파괴 조건")]
@@ -71,6 +72,7 @@ public class Planet : MonoBehaviour
             // 1. 회전 (라디안 단위로 누적)
             float angleDelta = rotateSpeed * Mathf.Deg2Rad * Time.deltaTime;
             currentAngle += angleDelta;
+            transform.Rotate(0, 0, magnetisRotateSpeed * Time.deltaTime);
 
             // 2. 중심으로 감기 (점점 반지름 축소)
             currentRadius *= Mathf.Pow(pullRate, Time.deltaTime * 60f); // 프레임 보정
