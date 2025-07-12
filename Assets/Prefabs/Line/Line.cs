@@ -146,7 +146,10 @@ public class Line : MonoBehaviour
         Instantiate(tetrisCompo.EffectPrefabs, transform);
         BroAudio.Play(tetrisCompo.lazerSound);
         tetrisCompo.LineDestroyEffect();
-        GameManager.Instance.Score(tetrisCompo.boomScore);
+        if(tetrisCompo.isForce)
+            GameManager.Instance.Score(100);
+        else
+            GameManager.Instance.Score(tetrisCompo.boomScore);
         yield return new WaitForSecondsRealtime(0.5f);
 
         for (int i = currentDetectedBlocks.Count - 1; i >= 0; i--)
@@ -159,7 +162,7 @@ public class Line : MonoBehaviour
                 block.GetComponent<Animator>().Play("Explosion");
             }
         }
-
+        tetrisCompo.isForce = false;
         ResetProgressBar(); // 슬라이더 리셋
     }
 

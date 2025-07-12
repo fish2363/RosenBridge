@@ -1,5 +1,6 @@
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MeteoPlanet : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class MeteoPlanet : MonoBehaviour
     private float deSpawnDu;
 
     public bool isEnemy;
+
+    public UnityEvent OnSpawnBoom;
 
     private void Awake()
     {
@@ -33,24 +36,23 @@ public class MeteoPlanet : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             transform.DOMove(collision.gameObject.transform.position,1f);
-            transform.DOScale(0f,1f).OnComplete(()=>
+            if (isEnemy)
             {
-                if (isEnemy)
-                {
-                    collision.GetComponent<BlackHole>().DamagePlayer();
-                    DestroyObj();
-                }
-                else
-                {
-                    
-                    DestroyObj();
-                }
-            });
-            
-
+                meteoSprite.gameObject.SetActive(false);
+                GetComponent<Animator>().Play("BadPlanetExplosion");
+                collision.GetComponent<BlackHole>().DamagePlayer();
+            }
+            else
+            {
+                transform.DOScale(0f, 1f).OnComplete(() =>
+                 {
+                     collision.GetComponent<BlackHole>().tetrisCompo.BlueBoom();
+                     DestroyObj();
+                 });
+            }
         }
     }
-    private void DestroyObj()
+    public void DestroyObj()
     {
         Destroy(gameObject);
     }

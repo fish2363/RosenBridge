@@ -122,6 +122,8 @@ public class TetrisCompo : MonoBehaviour
     [ContextMenu("LineDestroyEffect")]
     public void LineDestroyEffect() => OnLineDestroyEvent?.Invoke();
 
+    public bool isForce;
+
     public void LockLastLine()
     {
         if (walletPrefabs.Length -1 < wallIdx) return;
@@ -216,6 +218,7 @@ public class TetrisCompo : MonoBehaviour
 
     public void LineBlueBoom()
     {
+        isForce = true;
         StartCoroutine(BoomRoutine());
     }
     private IEnumerator BoomRoutine()
@@ -237,5 +240,4 @@ public class TetrisCompo : MonoBehaviour
             Gizmos.DrawLine(pos + Vector3.left * hw, pos + Vector3.right * hw);
         }
     }
-
 }

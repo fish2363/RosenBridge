@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5141085496730768347}
   - component: {fileID: 8513881433748120235}
   - component: {fileID: -3281004493356240857}
+  - component: {fileID: 7978959270502852352}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -86,7 +87,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -131,6 +132,9 @@ MonoBehaviour:
   moveSpeed: 5
   deSpawnDuration: 30
   isEnemy: 1
+  OnSpawnBoom:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!50 &8513881433748120235
 Rigidbody2D:
   serializedVersion: 5
@@ -194,6 +198,18 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.2111878, y: -0.19520472}
   m_Radius: 0.5866448
+--- !u!114 &7978959270502852352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5639495513016693782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ce003f0f282ae4f87781247162a18d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &524218720686283398
 PrefabInstance:
   m_ObjectHideFlags: 0

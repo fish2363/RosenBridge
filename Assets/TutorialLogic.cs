@@ -20,8 +20,6 @@ public class TutorialLogic : MonoBehaviour
 
     [SerializeField]
     private TextMeshProUGUI _text;
-    [SerializeField]
-    private Image textPanel;
 
     public Volume volume;
     private ColorAdjustments colorAdjustments;
@@ -53,18 +51,6 @@ public class TutorialLogic : MonoBehaviour
         ).SetEase(Ease.InOutSine);
     }
 
-    public void SetText(string text)
-    {
-        _text.SetText(text);               //텍스트를 입력
-        _text.ForceMeshUpdate();
-
-        textPanel.gameObject.SetActive(true);
-        textPanel.GetComponent<RectTransform>().position = tutorialDialogue[idx].TextPoint.position;
-        Vector2 textSize = _text.GetRenderedValues(false);   //띄어쓰기도 포함된 (렌더링 된) 텍스트의 너비
-        Vector2 offset = new Vector2(8, 8); //여백의 크기
-        textPanel.GetComponent<RectTransform>().sizeDelta = textSize + offset;
-    }
-
     private void Update()
     {
         if (isOn&&Input.GetMouseButtonDown(0)) isMouse = true;
@@ -72,14 +58,14 @@ public class TutorialLogic : MonoBehaviour
 
     private IEnumerator DialogueRoutine()
     {
-        SetText(tutorialDialogue[idx].tutorialText);
+        _text.text = tutorialDialogue[idx].tutorialText;
+        _text.transform.position = tutorialDialogue[idx].TextPoint.position;
         if (tutorialImage.Length > idx)
             tutorialImage[idx].gameObject.SetActive(true);
         yield return new WaitUntil(()=>isMouse);
         isMouse = false;
         if (tutorialImage.Length > idx)
             tutorialImage[idx].gameObject.SetActive(false);
-        textPanel.gameObject.SetActive(false);
         idx++;
 
         if (!(tutorialDialogue.Length <= idx))
@@ -87,6 +73,7 @@ public class TutorialLogic : MonoBehaviour
         else
         {
             TutorialIN(-10f);
+            _text.text = "";
             GetComponent<CanvasGroup>().alpha = 0f;
             isOn = false;
         }
