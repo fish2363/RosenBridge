@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mercury
+  m_Controller: {fileID: 9100000, guid: 7d4df44fb66fc384fb5c4d9ecd53d00d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: af8516ccef1ec3e4791e7966906197a4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a79609b4716b67e408e7b60e756b61f0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 54663641713cf874dab30c9e32549dff, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d55e5dad68faeb045a26a9cb38a74ad0, type: 2}

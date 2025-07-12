@@ -76,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1808159521
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7546481892259325517, guid: 8c7e9348090f7ac4aaddf4b667c3c62a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -108,6 +108,9 @@ MonoBehaviour:
   blackholeCenter: {fileID: 0}
   rotateSpeed: 180
   shrinkSpeed: 0.5
+  magneticForceSizeSpeed: 0.1
+  magnetisRotateSpeed: 30
+  magnetismSpeed: 0.3
   pullRate: 0.95
   minScaleThreshold: 0.1
   minRadiusThreshold: 0.05

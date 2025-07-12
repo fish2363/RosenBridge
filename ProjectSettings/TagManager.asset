@@ -16,7 +16,7 @@ TagManager:
   - Player
   - Place
   - Tetris
-  - 
+  - Putris
   - 
   - 
   - 
@@ -54,6 +54,9 @@ TagManager:
     locked: 0
   - name: Wallet
     uniqueID: 3252154689
+    locked: 0
+  - name: Effect
+    uniqueID: 1102585373
     locked: 0
   m_RenderingLayers:
   - Default

@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Neptune
+  m_Controller: {fileID: 9100000, guid: 7d4df44fb66fc384fb5c4d9ecd53d00d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: af8516ccef1ec3e4791e7966906197a4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 04cf26d9491b1bf4492c4806804eda0e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 54663641713cf874dab30c9e32549dff, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1d2f22299b862d24aac1523667514b9a, type: 2}

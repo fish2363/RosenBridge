@@ -1,130 +1,31 @@
 fileFormatVersion: 2
-guid: 4242516cdb0a35a4ab54fd4e8c5372c4
+guid: c4f1a1db746438340b745d42a908d729
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6112344236177818148
-    second: Saturneffect_B_type__0
+      213: 3355487644571552757
+    second: Boomeffect_-Sheet_0
   - first:
-      213: -7070078229038722078
-    second: Saturneffect_B_type__1
+      213: 5811496103815618893
+    second: Boomeffect_-Sheet_1
   - first:
-      213: 8275025030839910842
-    second: Saturneffect_B_type__2
+      213: 1546802922421025830
+    second: Boomeffect_-Sheet_2
   - first:
-      213: 8530735835849192600
-    second: Saturneffect_B_type__3
+      213: 1771404920325172192
+    second: Boomeffect_-Sheet_3
   - first:
-      213: -9167821274105535557
-    second: Saturneffect_B_type__4
+      213: -7200855800458817498
+    second: Boomeffect_-Sheet_4
   - first:
-      213: 2265754528513127164
-    second: Saturneffect_B_type__5
+      213: 1683719604577194083
+    second: Boomeffect_-Sheet_5
   - first:
-      213: 6728937021624458825
-    second: Saturneffect_B_type__6
+      213: -5649779096394488631
+    second: Boomeffect_-Sheet_6
   - first:
-      213: 6012310051142180226
-    second: Saturneffect_B_type__7
-  - first:
-      213: 1002854001675982645
-    second: Saturneffect_B_type__8
-  - first:
-      213: -6612520379624839133
-    second: Saturneffect_B_type__9
-  - first:
-      213: -5020773448974458936
-    second: Saturneffect_B_type__10
-  - first:
-      213: -5341695852338118818
-    second: Saturneffect_B_type__11
-  - first:
-      213: 3823565657871939859
-    second: Saturneffect_B_type__12
-  - first:
-      213: -3060410097576849369
-    second: Saturneffect_B_type__13
-  - first:
-      213: -1146957830883043538
-    second: Saturneffect_B_type__14
-  - first:
-      213: -2120068194573131933
-    second: Saturneffect_B_type__15
-  - first:
-      213: -5990510609455336055
-    second: Saturneffect_B_type__16
-  - first:
-      213: 9073193961417682058
-    second: Saturneffect_B_type__17
-  - first:
-      213: 6633932210801340248
-    second: Saturneffect_B_type__18
-  - first:
-      213: -8932396924123927548
-    second: Saturneffect_B_type__19
-  - first:
-      213: 1580785948965770886
-    second: Saturneffect_B_type__20
-  - first:
-      213: -1537370049052233961
-    second: Saturneffect_B_type__21
-  - first:
-      213: 1432862385263820815
-    second: Saturneffect_B_type__22
-  - first:
-      213: -6447293822004230975
-    second: Saturneffect_B_type__23
-  - first:
-      213: 2201843339521837310
-    second: Saturneffect_B_type__24
-  - first:
-      213: -5602900347642980953
-    second: Saturneffect_B_type__25
-  - first:
-      213: -4621087226069305830
-    second: Saturneffect_B_type__26
-  - first:
-      213: 3884233868417440245
-    second: Saturneffect_B_type__27
-  - first:
-      213: 7334998455942711929
-    second: Saturneffect_B_type__28
-  - first:
-      213: -2819022683970207078
-    second: Saturneffect_B_type__29
-  - first:
-      213: 4700858599779037230
-    second: Saturneffect_B_type__30
-  - first:
-      213: -3026126241812697293
-    second: Saturneffect_B_type__31
-  - first:
-      213: -7374850844062778129
-    second: Saturneffect_B_type__32
-  - first:
-      213: -7702159606328068695
-    second: Saturneffect_B_type__33
-  - first:
-      213: 4757658143048872644
-    second: Saturneffect_B_type__34
-  - first:
-      213: 7073457603673616070
-    second: Saturneffect_B_type__35
-  - first:
-      213: -408447534203201390
-    second: Saturneffect_B_type__36
-  - first:
-      213: -7527996919340885434
-    second: Saturneffect_B_type__37
-  - first:
-      213: -820962499175528816
-    second: Saturneffect_B_type__38
-  - first:
-      213: -104551172539540215
-    second: Saturneffect_B_type__39
-  - first:
-      213: -2429076610425101714
-    second: Saturneffect_B_type__40
+      213: -8710125007249705742
+    second: Boomeffect_-Sheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -220,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Saturneffect_B_type__0
+      name: Boomeffect_-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 100
-        height: 100
+        y: 1600
+        width: 1200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 422094eb2b863d450800000000000000
-      internalID: 6112344236177818148
+      spriteID: 5fb46ee0c36119e20800000000000000
+      internalID: 3355487644571552757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Saturneffect_B_type__1
+      name: Boomeffect_-Sheet_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 0
-        width: 100
-        height: 100
+        x: 0
+        y: 1400
+        width: 1200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e39cef3f4902ed90800000000000000
-      internalID: -7070078229038722078
+      spriteID: d412f717ae496a050800000000000000
+      internalID: 5811496103815618893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Saturneffect_B_type__2
+      name: Boomeffect_-Sheet_2
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 100
-        height: 100
+        x: 0
+        y: 1200
+        width: 1200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab1cdae2c6bc6d270800000000000000
-      internalID: 8275025030839910842
+      spriteID: 62cf0780019577510800000000000000
+      internalID: 1546802922421025830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Saturneffect_B_type__3
+      name: Boomeffect_-Sheet_3
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 100
-        height: 100
+        x: 0
+        y: 1000
+        width: 1200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8947c708b03436670800000000000000
-      internalID: 8530735835849192600
+      spriteID: 0eb6c55c36b459810800000000000000
+      internalID: 1771404920325172192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Saturneffect_B_type__4
+      name: Boomeffect_-Sheet_4
       rect:
         serializedVersion: 2
-        x: 400
-        y: 0
-        width: 100
-        height: 100
+        x: 0
+        y: 800
+        width: 1200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb3aba8df1b55c080800000000000000
-      internalID: -9167821274105535557
+      spriteID: 62057de1dcb611c90800000000000000
+      internalID: -7200855800458817498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Saturneffect_B_type__5
+      name: Boomeffect_-Sheet_5
       rect:
         serializedVersion: 2
-        x: 500
-        y: 0
-        width: 100
-        height: 100
+        x: 0
+        y: 600
+        width: 1200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,8 +246,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf2f14c3db3917f10800000000000000
-      internalID: 2265754528513127164
+      spriteID: 3605f244f06cd5710800000000000000
+      internalID: 1683719604577194083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boomeffect_-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 1200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4aafb78d3f791b0800000000000000
+      internalID: -5649779096394488631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boomeffect_-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 1200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f472a1447b6f1780800000000000000
+      internalID: -8710125007249705742
       vertices: []
       indices: 
       edges: []
@@ -355,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e08e9ab2e41162a40b85e48f0c1fd155
+    spriteID: aa27101a42ce42645a2ae5bd1d91fc59
     internalID: 0
     vertices: []
     indices: 
@@ -365,12 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Saturneffect_B_type__0: 6112344236177818148
-      Saturneffect_B_type__1: -7070078229038722078
-      Saturneffect_B_type__2: 8275025030839910842
-      Saturneffect_B_type__3: 8530735835849192600
-      Saturneffect_B_type__4: -9167821274105535557
-      Saturneffect_B_type__5: 2265754528513127164
+      Boomeffect_-Sheet_0: 3355487644571552757
+      Boomeffect_-Sheet_1: 5811496103815618893
+      Boomeffect_-Sheet_2: 1546802922421025830
+      Boomeffect_-Sheet_3: 1771404920325172192
+      Boomeffect_-Sheet_4: -7200855800458817498
+      Boomeffect_-Sheet_5: 1683719604577194083
+      Boomeffect_-Sheet_6: -5649779096394488631
+      Boomeffect_-Sheet_7: -8710125007249705742
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
