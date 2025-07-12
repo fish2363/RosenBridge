@@ -1,3 +1,4 @@
+using Ami.BroAudio;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -25,6 +26,15 @@ public class TetrisCompo : MonoBehaviour
     private float firstScore;
     private float currentScore;
     private bool isOneTime = true;
+    private bool isOneTimeGetSinMover;
+
+    [Header("¿Àµð¿À")]
+    [SerializeField]
+    private SoundID spawnWall;
+    [SerializeField]
+    private SoundID deSpawnWall;
+    public SoundID lazerSound;
+    public SoundID destroyPlanetSound;
 
     [SerializeField]
     private Transform[] spawnPoints;
@@ -110,6 +120,7 @@ public class TetrisCompo : MonoBehaviour
     {
         if (walletPrefabs.Length -1 < wallIdx) return;
         walletPrefabs[wallIdx].GetComponent<Line>().UnLockLine();
+        BroAudio.Play(spawnWall);
         wallIdx++;
         OnLockEvent?.Invoke();
     }
@@ -149,13 +160,21 @@ public class TetrisCompo : MonoBehaviour
 
     public void RemoveTetris()
     {
+        fieldTetris[0].GetComponent<PlanetTetrisBlock>().sinMover.gameObject.SetActive(false);
         fieldTetris.RemoveAt(0);
+        isOneTimeGetSinMover = false;
     }
 
     void FixedUpdate()
     {
         Vector2 moveDir = InputReader.TetrisInputDirection;
         if (fieldTetris.Count <= 0) return;
+        if (!isOneTimeGetSinMover)
+        {
+            Debug.Log(fieldTetris[0].GetComponent<PlanetTetrisBlock>());
+            fieldTetris[0].GetComponent<PlanetTetrisBlock>().sinMover.gameObject.SetActive(true);
+            isOneTimeGetSinMover = true;
+        }
         if (moveDir.y > 0f)
         {
             moveDir.y = 0f;

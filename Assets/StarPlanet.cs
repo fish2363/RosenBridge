@@ -1,3 +1,4 @@
+using Ami.BroAudio;
 using UnityEngine;
 
 public class StarPlanet : MonoBehaviour
@@ -25,7 +26,9 @@ public class StarPlanet : MonoBehaviour
 
     private float currentRadius;
     private float currentAngle;
-
+    [Header("¿Àµð¿À")]
+    [SerializeField]
+    private SoundID eatSFX;
     private void Start()
     {
         pullDuration = Random.Range(70,200);
@@ -66,6 +69,7 @@ public class StarPlanet : MonoBehaviour
         float avgScale = (transform.localScale.x + transform.localScale.y + transform.localScale.z) / 3f;
         if (avgScale < minScaleThreshold || currentRadius < minRadiusThreshold)
         {
+            BroAudio.Play(eatSFX);
             Destroy(gameObject);
         }
     }

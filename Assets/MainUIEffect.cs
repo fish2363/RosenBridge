@@ -1,10 +1,14 @@
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 
 public class MainUIEffect : MonoBehaviour
 {
     private bool isShaking;
     private RectTransform rectTransform;
+
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI HighText;
 
     private void Awake()
     {
@@ -25,5 +29,15 @@ public class MainUIEffect : MonoBehaviour
             false,
             true
         ).OnComplete(() => isShaking = false);
+    }
+
+    public void SetScore()
+    {
+        int levelNum = GameManager.Instance.CurrentScore;
+        scoreText.text = $"{levelNum}";
+        HighText.text = $"{PlayerPrefs.GetInt("stage", levelNum)}";
+
+        if (levelNum > PlayerPrefs.GetInt("stage",0))
+            PlayerPrefs.SetInt("stage", levelNum);
     }
 }
