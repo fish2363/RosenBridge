@@ -14,6 +14,7 @@ public class MainmenuLogic : MonoBehaviour
     public Camera Camera;
     private bool isRotate;
     public Image white;
+    public Image black;
 
     void Start()
     {
@@ -38,7 +39,7 @@ public class MainmenuLogic : MonoBehaviour
 
     public void GameStart()
     {
-        AnimateDistortion(-0.49f, 1f);
+        AnimateDistortion(-0.85f, 2f);
         for (int i =0;i<SineMover.Length;i++)
         {
             SineMover[i].enabled = false;
@@ -52,21 +53,22 @@ public class MainmenuLogic : MonoBehaviour
         DOTween.To(() => Camera.orthographicSize, x => {
             Camera.orthographicSize = x;
         }, 0.56f, 0.5f).OnComplete(()=> { 
-        white.DOFade(1f, 0.3f);
         });
         AnimateDistortion(-1f, 1f);
+        white.DOFade(1f,0.6f);
+        DOVirtual.DelayedCall(5f,()=> { black.DOFade(1f, 1f); });
         isRotate = true;
     }
 
     private void Update()
     {
         if(isRotate)
-        Camera.transform.parent.Rotate(0f,0f, 270f*Time.deltaTime);
+        Camera.transform.parent.Rotate(0f,0f, 360f*Time.deltaTime);
     }
 
     public void StartTutorial()
     {
-
+        FindAnyObjectByType<TutorialLogic>().TutorialStart();
     }
 
     public void QuitGame()
