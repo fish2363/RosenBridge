@@ -89,6 +89,7 @@ public class Planet : MonoBehaviour
             if (avgScale < minScaleThreshold || currentRadius < minRadiusThreshold)
             {
                 RosenBridge.Instance.EatPlanet(currentSO.planetType);
+                FindAnyObjectByType<Spawner>().planetList.Remove(gameObject);
                 Destroy(gameObject);
             }
         }
