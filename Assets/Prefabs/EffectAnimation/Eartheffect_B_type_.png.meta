@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: d0728ff1f581fe74fbefa38dcf18d302
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9159810951669067748
+    second: Eartheffect_B_type__0
+  - first:
+      213: -9037013902217824628
+    second: Eartheffect_B_type__1
+  - first:
+      213: -4000482883271801135
+    second: Eartheffect_B_type__2
+  - first:
+      213: 5634104192128336770
+    second: Eartheffect_B_type__3
+  - first:
+      213: 3246322321617133951
+    second: Eartheffect_B_type__4
+  - first:
+      213: -2588720765500319541
+    second: Eartheffect_B_type__5
+  - first:
+      213: 5740769686212321258
+    second: Eartheffect_B_type__6
+  - first:
+      213: 5490014668593461956
+    second: Eartheffect_B_type__7
+  - first:
+      213: -5783760930192554150
+    second: Eartheffect_B_type__8
+  - first:
+      213: 3451061881234556126
+    second: Eartheffect_B_type__9
+  - first:
+      213: 1502646110849935434
+    second: Eartheffect_B_type__10
+  - first:
+      213: 2212782939809733784
+    second: Eartheffect_B_type__11
+  - first:
+      213: -7262119152346377684
+    second: Eartheffect_B_type__12
+  - first:
+      213: -1343927680331173919
+    second: Eartheffect_B_type__13
+  - first:
+      213: 3248905165360321715
+    second: Eartheffect_B_type__14
+  - first:
+      213: -748603954743495810
+    second: Eartheffect_B_type__15
+  - first:
+      213: 2188378751191286927
+    second: Eartheffect_B_type__16
+  - first:
+      213: 7603130548402486457
+    second: Eartheffect_B_type__17
+  - first:
+      213: -6035094757612216974
+    second: Eartheffect_B_type__18
+  - first:
+      213: -5263747145133588054
+    second: Eartheffect_B_type__19
+  - first:
+      213: 4833715891593116982
+    second: Eartheffect_B_type__20
+  - first:
+      213: -5747057677807984202
+    second: Eartheffect_B_type__21
+  - first:
+      213: -2829355556364135694
+    second: Eartheffect_B_type__22
+  - first:
+      213: -8278386422922958306
+    second: Eartheffect_B_type__23
+  - first:
+      213: 1472337092106920185
+    second: Eartheffect_B_type__24
+  - first:
+      213: -5557534227689029585
+    second: Eartheffect_B_type__25
+  - first:
+      213: 5311627444583513757
+    second: Eartheffect_B_type__26
+  - first:
+      213: -2079407244418679960
+    second: Eartheffect_B_type__27
+  - first:
+      213: 9176818202361443797
+    second: Eartheffect_B_type__28
+  - first:
+      213: -4672016488993031877
+    second: Eartheffect_B_type__29
+  - first:
+      213: -8587721212821061732
+    second: Eartheffect_B_type__30
+  - first:
+      213: 5772723736655328729
+    second: Eartheffect_B_type__31
+  - first:
+      213: 3890581772658333039
+    second: Eartheffect_B_type__32
+  - first:
+      213: -5958597395031594334
+    second: Eartheffect_B_type__33
+  - first:
+      213: -3468891516880355495
+    second: Eartheffect_B_type__34
+  - first:
+      213: 4176140478053477080
+    second: Eartheffect_B_type__35
+  - first:
+      213: 5878351862696821094
+    second: Eartheffect_B_type__36
+  - first:
+      213: -5605077363382773523
+    second: Eartheffect_B_type__37
+  - first:
+      213: 740263146135483207
+    second: Eartheffect_B_type__38
+  - first:
+      213: 745926679891838567
+    second: Eartheffect_B_type__39
+  - first:
+      213: 6059594139063608849
+    second: Eartheffect_B_type__40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Eartheffect_B_type__0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4efa7ff978f2e1f70800000000000000
+      internalID: 9159810951669067748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eartheffect_B_type__1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c863a007cb3169280800000000000000
+      internalID: -9037013902217824628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eartheffect_B_type__2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d6cd8c530e6b78c0800000000000000
+      internalID: -4000482883271801135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eartheffect_B_type__3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283495779eb503e40800000000000000
+      internalID: 5634104192128336770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eartheffect_B_type__4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f712966a3f04d0d20800000000000000
+      internalID: 3246322321617133951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eartheffect_B_type__5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc81daded24031cd0800000000000000
+      internalID: -2588720765500319541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 827ef8c047faab84787ef0c135400083
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Eartheffect_B_type__0: 9159810951669067748
+      Eartheffect_B_type__1: -9037013902217824628
+      Eartheffect_B_type__2: -4000482883271801135
+      Eartheffect_B_type__3: 5634104192128336770
+      Eartheffect_B_type__4: 3246322321617133951
+      Eartheffect_B_type__5: -2588720765500319541
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

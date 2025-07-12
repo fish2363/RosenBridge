@@ -51,7 +51,7 @@ public class Line : MonoBehaviour
     private void FixedUpdate()
     {
         Bounds lineBounds = myCollider.bounds;
-        Collider2D[] hits = Physics2D.OverlapBoxAll(lineBounds.center, lineBounds.size, 0f);
+        Collider2D[] hits = Physics2D.OverlapBoxAll(lineBounds.center, new Vector2(lineBounds.size.x, lineBounds.size.y - 0.1f), 0f);
 
         currentDetectedBlocks.Clear();
         float totalWidthCovered = 0f;
@@ -139,7 +139,7 @@ public class Line : MonoBehaviour
         if (col != null)
         {
             Gizmos.color = currentCoverage >= requiredCoverageRatio ? Color.green : Color.red;
-            Gizmos.DrawWireCube(col.bounds.center, col.bounds.size);
+            Gizmos.DrawWireCube(col.bounds.center, new Vector2(col.bounds.size.x, col.bounds.size.y -0.1f));
         }
     }
 }

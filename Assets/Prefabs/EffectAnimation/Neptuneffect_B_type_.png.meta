@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: b2f60f493f9174e4f9a80856b056f72b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2286868462754436370
+    second: Neptuneffect_B_type__0
+  - first:
+      213: -7157447381011507245
+    second: Neptuneffect_B_type__1
+  - first:
+      213: 2824189903816092952
+    second: Neptuneffect_B_type__2
+  - first:
+      213: -7359378178423310666
+    second: Neptuneffect_B_type__3
+  - first:
+      213: 5400884690680870472
+    second: Neptuneffect_B_type__4
+  - first:
+      213: 8587276728835150649
+    second: Neptuneffect_B_type__5
+  - first:
+      213: 7483024617785047904
+    second: Neptuneffect_B_type__6
+  - first:
+      213: 8819810430928404371
+    second: Neptuneffect_B_type__7
+  - first:
+      213: 4816398179550281003
+    second: Neptuneffect_B_type__8
+  - first:
+      213: 6528214287714589434
+    second: Neptuneffect_B_type__9
+  - first:
+      213: -6695386420243201134
+    second: Neptuneffect_B_type__10
+  - first:
+      213: 7976892356033760269
+    second: Neptuneffect_B_type__11
+  - first:
+      213: -6268978363563010533
+    second: Neptuneffect_B_type__12
+  - first:
+      213: 8506085182427900904
+    second: Neptuneffect_B_type__13
+  - first:
+      213: 6553200136535044810
+    second: Neptuneffect_B_type__14
+  - first:
+      213: 2349270097813740602
+    second: Neptuneffect_B_type__15
+  - first:
+      213: 9012247176978318350
+    second: Neptuneffect_B_type__16
+  - first:
+      213: 1538384020987084665
+    second: Neptuneffect_B_type__17
+  - first:
+      213: 6824182885901666971
+    second: Neptuneffect_B_type__18
+  - first:
+      213: 1252451649958543771
+    second: Neptuneffect_B_type__19
+  - first:
+      213: 2545289805897417519
+    second: Neptuneffect_B_type__20
+  - first:
+      213: -2212749021802749467
+    second: Neptuneffect_B_type__21
+  - first:
+      213: 1951402888782521761
+    second: Neptuneffect_B_type__22
+  - first:
+      213: 1479836554352763294
+    second: Neptuneffect_B_type__23
+  - first:
+      213: 2163933168386553540
+    second: Neptuneffect_B_type__24
+  - first:
+      213: -4301017974124512609
+    second: Neptuneffect_B_type__25
+  - first:
+      213: -5600025503159771922
+    second: Neptuneffect_B_type__26
+  - first:
+      213: -2900740398417332979
+    second: Neptuneffect_B_type__27
+  - first:
+      213: 1694868826571454913
+    second: Neptuneffect_B_type__28
+  - first:
+      213: -6291559502730666208
+    second: Neptuneffect_B_type__29
+  - first:
+      213: 3125111087199013140
+    second: Neptuneffect_B_type__30
+  - first:
+      213: -6849163329600897289
+    second: Neptuneffect_B_type__31
+  - first:
+      213: -4912784603766942801
+    second: Neptuneffect_B_type__32
+  - first:
+      213: 6282830347223087010
+    second: Neptuneffect_B_type__33
+  - first:
+      213: 2310530584913395826
+    second: Neptuneffect_B_type__34
+  - first:
+      213: -5174030465176674659
+    second: Neptuneffect_B_type__35
+  - first:
+      213: -4761521784050205132
+    second: Neptuneffect_B_type__36
+  - first:
+      213: -7867420924691956564
+    second: Neptuneffect_B_type__37
+  - first:
+      213: 4266546282287765220
+    second: Neptuneffect_B_type__38
+  - first:
+      213: -4710203160143884420
+    second: Neptuneffect_B_type__39
+  - first:
+      213: -1912443707553005273
+    second: Neptuneffect_B_type__40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Neptuneffect_B_type__0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215958220c69cbf10800000000000000
+      internalID: 2286868462754436370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neptuneffect_B_type__1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7524c5783abac90800000000000000
+      internalID: -7157447381011507245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neptuneffect_B_type__2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81de33b11c9813720800000000000000
+      internalID: 2824189903816092952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neptuneffect_B_type__3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b63153d98c3ed990800000000000000
+      internalID: -7359378178423310666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neptuneffect_B_type__4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 846f0e4d20cc3fa40800000000000000
+      internalID: 5400884690680870472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neptuneffect_B_type__5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933923200b22c2770800000000000000
+      internalID: 8587276728835150649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 72c4c2c53ea6a6043a22925532654f93
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Neptuneffect_B_type__0: 2286868462754436370
+      Neptuneffect_B_type__1: -7157447381011507245
+      Neptuneffect_B_type__2: 2824189903816092952
+      Neptuneffect_B_type__3: -7359378178423310666
+      Neptuneffect_B_type__4: 5400884690680870472
+      Neptuneffect_B_type__5: 8587276728835150649
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

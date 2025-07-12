@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: 4242516cdb0a35a4ab54fd4e8c5372c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6112344236177818148
+    second: Saturneffect_B_type__0
+  - first:
+      213: -7070078229038722078
+    second: Saturneffect_B_type__1
+  - first:
+      213: 8275025030839910842
+    second: Saturneffect_B_type__2
+  - first:
+      213: 8530735835849192600
+    second: Saturneffect_B_type__3
+  - first:
+      213: -9167821274105535557
+    second: Saturneffect_B_type__4
+  - first:
+      213: 2265754528513127164
+    second: Saturneffect_B_type__5
+  - first:
+      213: 6728937021624458825
+    second: Saturneffect_B_type__6
+  - first:
+      213: 6012310051142180226
+    second: Saturneffect_B_type__7
+  - first:
+      213: 1002854001675982645
+    second: Saturneffect_B_type__8
+  - first:
+      213: -6612520379624839133
+    second: Saturneffect_B_type__9
+  - first:
+      213: -5020773448974458936
+    second: Saturneffect_B_type__10
+  - first:
+      213: -5341695852338118818
+    second: Saturneffect_B_type__11
+  - first:
+      213: 3823565657871939859
+    second: Saturneffect_B_type__12
+  - first:
+      213: -3060410097576849369
+    second: Saturneffect_B_type__13
+  - first:
+      213: -1146957830883043538
+    second: Saturneffect_B_type__14
+  - first:
+      213: -2120068194573131933
+    second: Saturneffect_B_type__15
+  - first:
+      213: -5990510609455336055
+    second: Saturneffect_B_type__16
+  - first:
+      213: 9073193961417682058
+    second: Saturneffect_B_type__17
+  - first:
+      213: 6633932210801340248
+    second: Saturneffect_B_type__18
+  - first:
+      213: -8932396924123927548
+    second: Saturneffect_B_type__19
+  - first:
+      213: 1580785948965770886
+    second: Saturneffect_B_type__20
+  - first:
+      213: -1537370049052233961
+    second: Saturneffect_B_type__21
+  - first:
+      213: 1432862385263820815
+    second: Saturneffect_B_type__22
+  - first:
+      213: -6447293822004230975
+    second: Saturneffect_B_type__23
+  - first:
+      213: 2201843339521837310
+    second: Saturneffect_B_type__24
+  - first:
+      213: -5602900347642980953
+    second: Saturneffect_B_type__25
+  - first:
+      213: -4621087226069305830
+    second: Saturneffect_B_type__26
+  - first:
+      213: 3884233868417440245
+    second: Saturneffect_B_type__27
+  - first:
+      213: 7334998455942711929
+    second: Saturneffect_B_type__28
+  - first:
+      213: -2819022683970207078
+    second: Saturneffect_B_type__29
+  - first:
+      213: 4700858599779037230
+    second: Saturneffect_B_type__30
+  - first:
+      213: -3026126241812697293
+    second: Saturneffect_B_type__31
+  - first:
+      213: -7374850844062778129
+    second: Saturneffect_B_type__32
+  - first:
+      213: -7702159606328068695
+    second: Saturneffect_B_type__33
+  - first:
+      213: 4757658143048872644
+    second: Saturneffect_B_type__34
+  - first:
+      213: 7073457603673616070
+    second: Saturneffect_B_type__35
+  - first:
+      213: -408447534203201390
+    second: Saturneffect_B_type__36
+  - first:
+      213: -7527996919340885434
+    second: Saturneffect_B_type__37
+  - first:
+      213: -820962499175528816
+    second: Saturneffect_B_type__38
+  - first:
+      213: -104551172539540215
+    second: Saturneffect_B_type__39
+  - first:
+      213: -2429076610425101714
+    second: Saturneffect_B_type__40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Saturneffect_B_type__0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422094eb2b863d450800000000000000
+      internalID: 6112344236177818148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturneffect_B_type__1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e39cef3f4902ed90800000000000000
+      internalID: -7070078229038722078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturneffect_B_type__2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1cdae2c6bc6d270800000000000000
+      internalID: 8275025030839910842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturneffect_B_type__3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8947c708b03436670800000000000000
+      internalID: 8530735835849192600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturneffect_B_type__4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb3aba8df1b55c080800000000000000
+      internalID: -9167821274105535557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturneffect_B_type__5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2f14c3db3917f10800000000000000
+      internalID: 2265754528513127164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e08e9ab2e41162a40b85e48f0c1fd155
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Saturneffect_B_type__0: 6112344236177818148
+      Saturneffect_B_type__1: -7070078229038722078
+      Saturneffect_B_type__2: 8275025030839910842
+      Saturneffect_B_type__3: 8530735835849192600
+      Saturneffect_B_type__4: -9167821274105535557
+      Saturneffect_B_type__5: 2265754528513127164
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

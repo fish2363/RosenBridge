@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: 170264fa70a0f57478c6b472c1729d53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1185464203593037543
+    second: jupitereffect_B_type__0
+  - first:
+      213: 1698289025109380503
+    second: jupitereffect_B_type__1
+  - first:
+      213: -6264960523507679710
+    second: jupitereffect_B_type__2
+  - first:
+      213: -7494725461330729789
+    second: jupitereffect_B_type__3
+  - first:
+      213: -8703640316836378677
+    second: jupitereffect_B_type__4
+  - first:
+      213: -1022611083125852693
+    second: jupitereffect_B_type__5
+  - first:
+      213: 6660330042266132755
+    second: jupitereffect_B_type__6
+  - first:
+      213: -9097496201743081640
+    second: jupitereffect_B_type__7
+  - first:
+      213: 8716431992626665706
+    second: jupitereffect_B_type__8
+  - first:
+      213: -1074325305697222034
+    second: jupitereffect_B_type__9
+  - first:
+      213: -3691240750592124917
+    second: jupitereffect_B_type__10
+  - first:
+      213: 1854319404606033739
+    second: jupitereffect_B_type__11
+  - first:
+      213: -6493568529705133348
+    second: jupitereffect_B_type__12
+  - first:
+      213: 6253920278891231708
+    second: jupitereffect_B_type__13
+  - first:
+      213: 7405622815991087919
+    second: jupitereffect_B_type__14
+  - first:
+      213: 4582473248631767642
+    second: jupitereffect_B_type__15
+  - first:
+      213: 5804010716242957863
+    second: jupitereffect_B_type__16
+  - first:
+      213: 569568231224268089
+    second: jupitereffect_B_type__17
+  - first:
+      213: -8971586637529355709
+    second: jupitereffect_B_type__18
+  - first:
+      213: 7259669192869220362
+    second: jupitereffect_B_type__19
+  - first:
+      213: -1029812339716056196
+    second: jupitereffect_B_type__20
+  - first:
+      213: 4555572635519360773
+    second: jupitereffect_B_type__21
+  - first:
+      213: 707733036412327551
+    second: jupitereffect_B_type__22
+  - first:
+      213: 4586327965529119241
+    second: jupitereffect_B_type__23
+  - first:
+      213: -2454674295709663372
+    second: jupitereffect_B_type__24
+  - first:
+      213: -3524596864807859023
+    second: jupitereffect_B_type__25
+  - first:
+      213: -476635408888601278
+    second: jupitereffect_B_type__26
+  - first:
+      213: -2589360792194817918
+    second: jupitereffect_B_type__27
+  - first:
+      213: -1615125316611299495
+    second: jupitereffect_B_type__28
+  - first:
+      213: -290280782765595901
+    second: jupitereffect_B_type__29
+  - first:
+      213: 4662113304992265662
+    second: jupitereffect_B_type__30
+  - first:
+      213: 8503332394381737723
+    second: jupitereffect_B_type__31
+  - first:
+      213: 6042731892892569625
+    second: jupitereffect_B_type__32
+  - first:
+      213: 7432884531138568198
+    second: jupitereffect_B_type__33
+  - first:
+      213: -95776790396933948
+    second: jupitereffect_B_type__34
+  - first:
+      213: 274556584041725692
+    second: jupitereffect_B_type__35
+  - first:
+      213: 668590041023924497
+    second: jupitereffect_B_type__36
+  - first:
+      213: 747164967548030870
+    second: jupitereffect_B_type__37
+  - first:
+      213: 5103721535464540866
+    second: jupitereffect_B_type__38
+  - first:
+      213: 7797114867563264752
+    second: jupitereffect_B_type__39
+  - first:
+      213: -6761275911441893308
+    second: jupitereffect_B_type__40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jupitereffect_B_type__0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6ba1d896d937010800000000000000
+      internalID: 1185464203593037543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jupitereffect_B_type__1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79dc693ded8819710800000000000000
+      internalID: 1698289025109380503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jupitereffect_B_type__2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22eba78d8936e09a0800000000000000
+      internalID: -6264960523507679710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jupitereffect_B_type__3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c46e44d6e26df790800000000000000
+      internalID: -7494725461330729789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jupitereffect_B_type__4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc70336ee35763780800000000000000
+      internalID: -8703640316836378677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jupitereffect_B_type__5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5f7ee43a4fec1f0800000000000000
+      internalID: -1022611083125852693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 24272bdc24087fb4d9e086b172a0d161
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      jupitereffect_B_type__0: 1185464203593037543
+      jupitereffect_B_type__1: 1698289025109380503
+      jupitereffect_B_type__2: -6264960523507679710
+      jupitereffect_B_type__3: -7494725461330729789
+      jupitereffect_B_type__4: -8703640316836378677
+      jupitereffect_B_type__5: -1022611083125852693
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

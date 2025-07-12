@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: 1d0a8aa860c37d448a7869b7d8a3a241
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1863584411464064405
+    second: Venuseffect_B_type__0
+  - first:
+      213: 5947781804715990816
+    second: Venuseffect_B_type__1
+  - first:
+      213: -8216716806701800065
+    second: Venuseffect_B_type__2
+  - first:
+      213: 1131814667094916709
+    second: Venuseffect_B_type__3
+  - first:
+      213: -3198243689642680869
+    second: Venuseffect_B_type__4
+  - first:
+      213: 2230124986687461712
+    second: Venuseffect_B_type__5
+  - first:
+      213: 7829278796058347523
+    second: Venuseffect_B_type__6
+  - first:
+      213: 4012056262645359418
+    second: Venuseffect_B_type__7
+  - first:
+      213: 3074713122131306542
+    second: Venuseffect_B_type__8
+  - first:
+      213: 6513848783705687356
+    second: Venuseffect_B_type__9
+  - first:
+      213: 507064065271364908
+    second: Venuseffect_B_type__10
+  - first:
+      213: 52471956843704240
+    second: Venuseffect_B_type__11
+  - first:
+      213: 3768682048802336288
+    second: Venuseffect_B_type__12
+  - first:
+      213: 8185386090247624945
+    second: Venuseffect_B_type__13
+  - first:
+      213: -2098421117145123285
+    second: Venuseffect_B_type__14
+  - first:
+      213: 4169623607426295026
+    second: Venuseffect_B_type__15
+  - first:
+      213: 4327994464974424372
+    second: Venuseffect_B_type__16
+  - first:
+      213: 1410620025977978603
+    second: Venuseffect_B_type__17
+  - first:
+      213: -7321319100841238078
+    second: Venuseffect_B_type__18
+  - first:
+      213: -4340410264887303966
+    second: Venuseffect_B_type__19
+  - first:
+      213: -2617692152244473880
+    second: Venuseffect_B_type__20
+  - first:
+      213: 8969747941218223332
+    second: Venuseffect_B_type__21
+  - first:
+      213: 1525712223939031225
+    second: Venuseffect_B_type__22
+  - first:
+      213: -3687307409275588270
+    second: Venuseffect_B_type__23
+  - first:
+      213: -6234740128404241362
+    second: Venuseffect_B_type__24
+  - first:
+      213: 4911062504894092125
+    second: Venuseffect_B_type__25
+  - first:
+      213: -1068654997214645616
+    second: Venuseffect_B_type__26
+  - first:
+      213: -2894185422261257783
+    second: Venuseffect_B_type__27
+  - first:
+      213: 6616277368176191253
+    second: Venuseffect_B_type__28
+  - first:
+      213: 5654368213007269400
+    second: Venuseffect_B_type__29
+  - first:
+      213: 352673641574896062
+    second: Venuseffect_B_type__30
+  - first:
+      213: -8981654664622304483
+    second: Venuseffect_B_type__31
+  - first:
+      213: 2282540242401581436
+    second: Venuseffect_B_type__32
+  - first:
+      213: -8883620607383853243
+    second: Venuseffect_B_type__33
+  - first:
+      213: 3521929943666568828
+    second: Venuseffect_B_type__34
+  - first:
+      213: -6140667081721251075
+    second: Venuseffect_B_type__35
+  - first:
+      213: -8000568260427325650
+    second: Venuseffect_B_type__36
+  - first:
+      213: 2951528309448338804
+    second: Venuseffect_B_type__37
+  - first:
+      213: 5961220235099569900
+    second: Venuseffect_B_type__38
+  - first:
+      213: -8417958515660347927
+    second: Venuseffect_B_type__39
+  - first:
+      213: 1686593877827931062
+    second: Venuseffect_B_type__40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Venuseffect_B_type__0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d55460628ccd910800000000000000
+      internalID: 1863584411464064405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Venuseffect_B_type__1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02fd0a7e904ca8250800000000000000
+      internalID: 5947781804715990816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Venuseffect_B_type__2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75ae8c299b58fd80800000000000000
+      internalID: -8216716806701800065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Venuseffect_B_type__3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ef4cf617305bf00800000000000000
+      internalID: 1131814667094916709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Venuseffect_B_type__4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd96bd2f4e8d93d0800000000000000
+      internalID: -3198243689642680869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Venuseffect_B_type__5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0599a341cdef2fe10800000000000000
+      internalID: 2230124986687461712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2d23567dc7162584fb0062ba18b47049
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Venuseffect_B_type__0: 1863584411464064405
+      Venuseffect_B_type__1: 5947781804715990816
+      Venuseffect_B_type__2: -8216716806701800065
+      Venuseffect_B_type__3: 1131814667094916709
+      Venuseffect_B_type__4: -3198243689642680869
+      Venuseffect_B_type__5: 2230124986687461712
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
