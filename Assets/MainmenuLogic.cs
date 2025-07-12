@@ -1,7 +1,7 @@
+using Ami.BroAudio;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Playables;
-using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,12 +10,14 @@ public class MainmenuLogic : MonoBehaviour
 {
     private LensDistortion lensDistortion;
     public PlayableDirector timeline;
-    public Volume volume;
+    public UnityEngine.Rendering.Volume volume;
     public SineMover[] SineMover;
     public Camera Camera;
     private bool isRotate;
     public Image white;
     public Image black;
+
+    public SoundID uiSound;
 
     void Start()
     {
@@ -40,6 +42,7 @@ public class MainmenuLogic : MonoBehaviour
 
     public void GameStart()
     {
+        BroAudio.Play(uiSound);
         AnimateDistortion(-0.85f, 2f);
         for (int i =0;i<SineMover.Length;i++)
         {
@@ -69,11 +72,15 @@ public class MainmenuLogic : MonoBehaviour
 
     public void StartTutorial()
     {
+        BroAudio.Play(uiSound);
+
         FindAnyObjectByType<TutorialLogic>().TutorialStart();
     }
 
     public void QuitGame()
     {
+        BroAudio.Play(uiSound);
+
 #if UNITY_EDITOR
         // 에디터 모드에서 실행 중이면 Play 모드를 끔
         UnityEditor.EditorApplication.isPlaying = false;
