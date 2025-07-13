@@ -18,6 +18,7 @@ public class MainmenuLogic : MonoBehaviour
     public Image black;
 
     public SoundID uiSound;
+    public SoundID inToSound;
 
     void Start()
     {
@@ -54,6 +55,7 @@ public class MainmenuLogic : MonoBehaviour
 
     public void InToVoid()
     {
+        BroAudio.Play(inToSound);
         DOTween.To(() => Camera.orthographicSize, x => {
             Camera.orthographicSize = x;
         }, 0.56f, 0.5f).OnComplete(()=> { 

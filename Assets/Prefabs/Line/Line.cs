@@ -130,7 +130,7 @@ public class Line : MonoBehaviour
         UpdateProgressBar();
     }
 
-    private IEnumerator DestroyRoutine()
+    private IEnumerator DestroyRoutine(bool force = false)
     {
         tetrisCompo.DestroyTetris();
         yield return new WaitForSeconds(0.7f);
@@ -146,10 +146,14 @@ public class Line : MonoBehaviour
         Instantiate(tetrisCompo.EffectPrefabs, transform);
         BroAudio.Play(tetrisCompo.lazerSound);
         tetrisCompo.LineDestroyEffect();
-        if(tetrisCompo.isForce)
-            GameManager.Instance.Score(10);
+        if (force)
+        {
+            GameManager.Instance.Score(10);  // 강제 점수
+        }
         else
-            GameManager.Instance.Score(tetrisCompo.boomScore);
+        {
+            GameManager.Instance.Score(tetrisCompo.boomScore); // 보통 500점
+        }
         yield return new WaitForSecondsRealtime(0.5f);
 
         for (int i = currentDetectedBlocks.Count - 1; i >= 0; i--)
@@ -261,8 +265,9 @@ public class Line : MonoBehaviour
     }
     public void ForceDestroy()
     {
-        StopAllCoroutines(); // 혹시 모를 중복 방지
-        StartCoroutine(DestroyRoutine());
+        if (!gameObject.activeInHierarchy) return;
+        StopAllCoroutines();
+        StartCoroutine(DestroyRoutine(force: true));
     }
     private void OnDrawGizmosSelected()
     {

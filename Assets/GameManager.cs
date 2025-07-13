@@ -36,12 +36,12 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         player = FindAnyObjectByType<BlackHole>();
-        InputReader.OnReStartKeyPressed += ReStartScene;
+        InputReader.OnMainMenuKeyPressed += ReStartScene;
         InputReader.OnReStartKeyPressed += ReScene;
     }
     private void OnDisable()
     {
-        InputReader.OnReStartKeyPressed -= ReStartScene;
+        InputReader.OnMainMenuKeyPressed -= ReStartScene;
         InputReader.OnReStartKeyPressed -= ReScene;
     }
     private void Start()

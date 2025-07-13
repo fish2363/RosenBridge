@@ -135,6 +135,10 @@ MonoBehaviour:
   OnSpawnBoom:
     m_PersistentCalls:
       m_Calls: []
+  meteoBurst:
+    ID: 1073741850
+    _sourceAsset: {fileID: 11400000, guid: 2904c09302c37c74ebb62a8d35cb650c, type: 2}
+    <DebugObject>k__BackingField: {fileID: 5639495513016693782}
 --- !u!50 &8513881433748120235
 Rigidbody2D:
   serializedVersion: 5

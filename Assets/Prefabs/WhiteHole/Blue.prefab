@@ -198,6 +198,14 @@ MonoBehaviour:
   OnSpawnBoom:
     m_PersistentCalls:
       m_Calls: []
+  meteoBurst:
+    ID: 0
+    _sourceAsset: {fileID: 0}
+    <DebugObject>k__BackingField: {fileID: 3899752018203166243}
+  placeMeteoBurst:
+    ID: 0
+    _sourceAsset: {fileID: 0}
+    <DebugObject>k__BackingField: {fileID: 3899752018203166243}
 --- !u!114 &7915261265491912334
 MonoBehaviour:
   m_ObjectHideFlags: 0

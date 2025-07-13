@@ -1,3 +1,4 @@
+using Ami.BroAudio;
 using DG.Tweening;
 using UnityEngine;
 
@@ -10,13 +11,9 @@ public class TetrisBoom : MonoBehaviour
     [SerializeField] private float checkRadius = 0.3f;
     [SerializeField] private LayerMask placeLayer;
     [SerializeField] private Transform effect;
+    public SoundID placeMeteoBurst;
 
     private bool isOneTIme;
-
-    private void Start()
-    {
-        
-    }
 
     private void Update()
     {
@@ -29,6 +26,7 @@ public class TetrisBoom : MonoBehaviour
         // ¿À¹ö·¦ Ã¼Å©
         if (Physics2D.OverlapCircle(transform.position, checkRadius, placeLayer) && !isOneTIme)
         {
+            BroAudio.Play(placeMeteoBurst);
             effect.localScale = new Vector3(effect.localScale.x, 0f, effect.localScale.z);
             effect.DOScaleY(3f, 0.3f)
                   .OnComplete(() =>

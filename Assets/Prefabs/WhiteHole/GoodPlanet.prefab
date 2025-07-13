@@ -165,6 +165,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 640
   effect: {fileID: 2379312234570090341}
+  placeMeteoBurst:
+    ID: 1073741847
+    _sourceAsset: {fileID: 11400000, guid: 2904c09302c37c74ebb62a8d35cb650c, type: 2}
+    <DebugObject>k__BackingField: {fileID: 5137233834272790328}
 --- !u!95 &7924558511089747547
 Animator:
   serializedVersion: 7

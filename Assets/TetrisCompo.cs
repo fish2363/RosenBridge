@@ -228,6 +228,7 @@ public class TetrisCompo : MonoBehaviour
 
         foreach (GameObject line in walletPrefabs)
         {
+            UnLockFirstLine();
             line.GetComponent<Line>().ForceDestroy();
             yield return new WaitForSecondsRealtime(0.2f);
         }

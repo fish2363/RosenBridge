@@ -26,6 +26,18 @@ public class ESCManager : MonoBehaviour
 
     private List<Resolution> resolutions=new();
     private bool _isInitialized;
+    public static ESCManager Instance;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+            Destroy(gameObject);
+    }
 
     void Start()
     {

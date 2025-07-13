@@ -1,3 +1,4 @@
+using Ami.BroAudio;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
@@ -17,6 +18,8 @@ public class MeteoPlanet : MonoBehaviour
     public bool isEnemy;
 
     public UnityEvent OnSpawnBoom;
+
+    public SoundID meteoBurst;
 
     private void Awake()
     {
@@ -38,6 +41,7 @@ public class MeteoPlanet : MonoBehaviour
             transform.DOMove(collision.gameObject.transform.position,1f);
             if (isEnemy)
             {
+                BroAudio.Play(meteoBurst);
                 meteoSprite.gameObject.SetActive(false);
                 GetComponent<Animator>().Play("BadPlanetExplosion");
                 collision.GetComponent<BlackHole>().DamagePlayer();
