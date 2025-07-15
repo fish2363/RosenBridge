@@ -20,11 +20,21 @@ public class MainmenuLogic : MonoBehaviour
     public SoundID uiSound;
     public SoundID inToSound;
 
+    [SerializeField] private Button[] activeButton;
+
     void Start()
     {
         if (!volume.profile.TryGet(out lensDistortion))
         {
             Debug.LogError("Lens Distortion not found in Volume Profile!");
+        }
+    }
+
+    public void CanceledButton(bool value)
+    {
+        foreach(Button button in activeButton)
+        {
+            button.enabled = value;
         }
     }
 
@@ -43,6 +53,7 @@ public class MainmenuLogic : MonoBehaviour
 
     public void GameStart()
     {
+        CanceledButton(false);
         BroAudio.Play(uiSound);
         AnimateDistortion(-0.85f, 2f);
         for (int i =0;i<SineMover.Length;i++)
@@ -74,6 +85,8 @@ public class MainmenuLogic : MonoBehaviour
 
     public void StartTutorial()
     {
+        CanceledButton(false);
+
         BroAudio.Play(uiSound);
 
         FindAnyObjectByType<TutorialLogic>().TutorialStart();

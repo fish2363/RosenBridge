@@ -6,13 +6,21 @@ using UnityEngine.UI;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Rendering;
 using DG.Tweening;
+using UnityEngine.InputSystem;
+
+public enum IDialogueSkip
+{
+    Defalut,
+    Next,
+    Prev
+}
 
 public class TutorialLogic : MonoBehaviour
 {
     [Header("대사 입력하기 \\n을 입력하면 띄어쓰기")]
     public Dialogue[] tutorialDialogue;
     int idx;
-    private bool isMouse;
+    private IDialogueSkip isMouse = IDialogueSkip.Defalut;
     private bool isOn;
 
     [SerializeField] private Image[] tutorialImage;
@@ -23,6 +31,9 @@ public class TutorialLogic : MonoBehaviour
     [SerializeField] private Vector2 padding = new Vector2(20f, 10f);
     [SerializeField] private Vector2 minSize = new Vector2(100f, 40f);
     [SerializeField] private Vector2 maxSize = new Vector2(500f, 200f);
+
+    [SerializeField]
+    private GameObject tip;
 
     public Volume volume;
     private ColorAdjustments colorAdjustments;
@@ -38,6 +49,7 @@ public class TutorialLogic : MonoBehaviour
     public void TutorialStart()
     {
         idx = 0;
+        tip.SetActive(true);
         TutorialIN(-100f);
         bubbleBackground.gameObject.SetActive(true);
         GetComponent<CanvasGroup>().alpha = 1f;
@@ -57,8 +69,10 @@ public class TutorialLogic : MonoBehaviour
 
     private void Update()
     {
-        if (isOn && Input.GetMouseButtonDown(0))
-            isMouse = true;
+        if (isOn && (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.Space)))
+            isMouse = IDialogueSkip.Next;
+        if(isOn && (Input.GetKeyDown(KeyCode.LeftArrow)))
+            isMouse = IDialogueSkip.Prev;
     }
 
     private IEnumerator DialogueRoutine()
@@ -71,13 +85,16 @@ public class TutorialLogic : MonoBehaviour
         if (tutorialImage.Length > idx)
             tutorialImage[idx].gameObject.SetActive(true);
 
-        yield return new WaitUntil(() => isMouse);
-        isMouse = false;
+        yield return new WaitUntil(() => isMouse != IDialogueSkip.Defalut);
 
         if (tutorialImage.Length > idx)
             tutorialImage[idx].gameObject.SetActive(false);
 
-        idx++;
+        if(isMouse == IDialogueSkip.Next)
+            idx++;
+        else if (isMouse == IDialogueSkip.Prev && (idx -1) >= 0)
+            idx--;
+        isMouse = IDialogueSkip.Defalut;
 
         if (idx < tutorialDialogue.Length)
             StartCoroutine(DialogueRoutine());
@@ -87,7 +104,9 @@ public class TutorialLogic : MonoBehaviour
             _text.text = "";
             bubbleBackground.gameObject.SetActive(false);
             GetComponent<CanvasGroup>().alpha = 0f;
+            FindAnyObjectByType<MainmenuLogic>().CanceledButton(true);
             isOn = false;
+            tip.SetActive(false);
         }
     }
 

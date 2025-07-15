@@ -135,6 +135,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Reset"",
+                    ""type"": ""Button"",
+                    ""id"": ""e6b6eb46-90a8-4f0a-956b-9e39eb6c6f29"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -280,6 +289,17 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""action"": ""ReStart"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5b531adb-aaf0-4499-aa8e-394633b359d2"",
+                    ""path"": ""<Keyboard>/f12"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -293,6 +313,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_BlackHole_Tetris = m_BlackHole.FindAction("Tetris", throwIfNotFound: true);
         m_BlackHole_MainMeun = m_BlackHole.FindAction("MainMeun", throwIfNotFound: true);
         m_BlackHole_ReStart = m_BlackHole.FindAction("ReStart", throwIfNotFound: true);
+        m_BlackHole_Reset = m_BlackHole.FindAction("Reset", throwIfNotFound: true);
     }
 
     ~@PlayerInput()
@@ -378,6 +399,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_BlackHole_Tetris;
     private readonly InputAction m_BlackHole_MainMeun;
     private readonly InputAction m_BlackHole_ReStart;
+    private readonly InputAction m_BlackHole_Reset;
     /// <summary>
     /// Provides access to input actions defined in input action map "BlackHole".
     /// </summary>
@@ -409,6 +431,10 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "BlackHole/ReStart".
         /// </summary>
         public InputAction @ReStart => m_Wrapper.m_BlackHole_ReStart;
+        /// <summary>
+        /// Provides access to the underlying input action "BlackHole/Reset".
+        /// </summary>
+        public InputAction @Reset => m_Wrapper.m_BlackHole_Reset;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -450,6 +476,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @ReStart.started += instance.OnReStart;
             @ReStart.performed += instance.OnReStart;
             @ReStart.canceled += instance.OnReStart;
+            @Reset.started += instance.OnReset;
+            @Reset.performed += instance.OnReset;
+            @Reset.canceled += instance.OnReset;
         }
 
         /// <summary>
@@ -476,6 +505,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @ReStart.started -= instance.OnReStart;
             @ReStart.performed -= instance.OnReStart;
             @ReStart.canceled -= instance.OnReStart;
+            @Reset.started -= instance.OnReset;
+            @Reset.performed -= instance.OnReset;
+            @Reset.canceled -= instance.OnReset;
         }
 
         /// <summary>
@@ -551,5 +583,12 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnReStart(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Reset" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnReset(InputAction.CallbackContext context);
     }
 }

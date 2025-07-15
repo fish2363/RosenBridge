@@ -7,6 +7,7 @@ public class InputReader : ScriptableObject, PlayerInput.IBlackHoleActions
     public event Action OnEscKeyPressed;
     public event Action OnReStartKeyPressed;
     public event Action OnMainMenuKeyPressed;
+    public event Action OnResetKeyPressed;
     public Vector2 HoleInputDirection { get; private set; }
     public Vector2 TetrisInputDirection { get; private set; }
 
@@ -53,5 +54,11 @@ public class InputReader : ScriptableObject, PlayerInput.IBlackHoleActions
     {
         if (context.performed)
             OnReStartKeyPressed?.Invoke();
+    }
+
+    public void OnReset(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    {
+        if (context.performed)
+            OnResetKeyPressed?.Invoke();
     }
 }
